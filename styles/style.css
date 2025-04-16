@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  margin: 1.25rem 0;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  transition: background-color 2s ease, -webkit-backdrop-filter 1s ease;
+  transition: background-color 2s ease, backdrop-filter 1s ease;
+  transition: background-color 2s ease, backdrop-filter 1s ease, -webkit-backdrop-filter 1s ease;
+}
+header .header_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header_img .element {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+header .header_img .element::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #dadada, #6d99d6, #1565D8, #1565D8);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+header .header_img .element:hover::before {
+  transform: translateX(100%);
+}
+header .header_img h1 {
+  color: #183B56;
+  font-size: 1.5rem;
+}
+header .header_img img {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+header .header_img a {
+  cursor: pointer;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+header nav a {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 0.625rem 1.25rem;
+  color: #183B56;
+  text-decoration: none;
+  display: flex;
+  transition: linear 0.5s;
+}
+header nav a:hover {
+  background-color: rgb(23, 109, 196);
+  color: #fff;
+}
+header nav .D:hover {
+  background-color: rgb(23, 109, 196);
+}
+header .D {
+  margin: 0 1.25rem;
+  border: 0.25rem rgb(23, 109, 196) solid;
+  border-radius: 0.5rem;
+  padding: 0.9375rem 1.875rem;
+  text-decoration: none;
+  color: rgb(23, 109, 196);
+  font-weight: 700;
+}
+
+header.scrolled {
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.target_of_school {
+  position: relative;
+  bottom: 7.8125rem;
+}
+.target_of_school .part1 {
+  position: relative;
+}
+.target_of_school .part1 span {
+  font-size: 9.375rem;
+}
+.target_of_school .part1 #logo_text {
+  position: absolute;
+  bottom: 45%;
+  right: 8%;
+  overflow-x: hidden;
+}
+.target_of_school .part1 .gradient-text {
+  background: linear-gradient(to right, #ffffff, #ffffff, #0086EF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.target_of_school .text_box {
+  position: absolute;
+  bottom: -3.125rem;
+  margin-left: 60vw;
+}
+.target_of_school .text_box p {
+  margin-left: 3.125rem;
+}
+
+.history_of_school {
+  width: 75vw;
+  margin: 0 auto;
+}
+.history_of_school .text_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 6.25rem;
+}
+
+.location {
+  margin: auto;
+  margin-top: 6.25rem;
+  width: 75vw;
+  height: 34.375rem;
+  background-color: #5A7184;
+  border-radius: 1.5rem;
+}
+
+.heading {
+  margin: auto;
+  margin-top: 6.25rem;
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heading nav {
+  width: 75%;
+  margin-top: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading nav button {
+  cursor: pointer;
+  width: 10rem;
+  padding: 0.8125rem;
+  color: #5A7184;
+  border: solid 0.125rem #5A7184;
+  border-radius: 6.25rem;
+  background-color: #fff;
+}
+.heading nav button:hover {
+  background-color: #5A7184;
+  color: #fff;
+  transition: linear 0.3s;
+}
+.heading nav .active {
+  color: #1565D8;
+  border: solid 0.125rem #1565D8;
+}
+.heading nav .active:hover {
+  background-color: #1565D8;
+  color: #fff;
+}
+.heading .photo {
+  width: 75vw;
+  margin-top: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+}
+.heading .photo .edge {
+  height: 37.5rem;
+}
+.heading .photo .central {
+  height: 50rem;
+}
+.heading .photo div {
+  flex: 1;
+  background-color: #D9D9D9;
+  border-radius: 0.9375rem;
+}
+
+.why_us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 6.25rem;
+  width: 75vw;
+}
+.why_us .text_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.why_us .text_box h3 {
+  color: #1565D8;
+}
+.why_us .text_box p {
+  margin-top: 1.25rem;
+}
+.why_us .prove {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 1.875rem;
+  justify-content: center;
+}
+.why_us .prove .element {
+  border: solid 0.125rem #E5EAF4;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 17.5rem;
+  padding: 2.5rem;
+  transition: linear 1s;
+}
+.why_us .prove .element img {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-bottom: 1.875rem;
+}
+.why_us .prove .element h5 {
+  margin-bottom: 0.625rem;
+}
+.why_us .prove .element:hover {
+  background-color: #1565D8;
+}
+.why_us .prove .element:hover h5 {
+  color: #fff;
+}
+.why_us .prove .element:hover p {
+  color: #c4c4c4;
+}
+.why_us .prove .element:hover img {
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.call_us {
+  margin-top: 6.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/structures/Base.svg") no-repeat center;
+  background-size: cover;
+  padding: 5.625rem 0;
+}
+.call_us h2, .call_us p, .call_us button {
+  color: #fff;
+  text-align: center;
+}
+.call_us h2 {
+  line-height: 3rem;
+}
+.call_us p {
+  margin-top: 0.625rem;
+}
+.call_us button {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.875rem;
+  width: 25rem;
+  height: 3.75rem;
+  padding: 0 1.875rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  color: #959EAD;
+  font-size: 1.25rem;
+  transition: 0.2s linear;
+}
+.call_us a {
+  text-decoration: none;
+}
+.call_us button:hover {
+  color: #1565D8;
+  font-weight: 600;
+}
+
+.quote {
+  margin: auto;
+  margin-top: 12.5rem;
+  width: 75rem;
+  height: 25rem;
+  background-color: #F9FBFE;
+  border-radius: 1.25rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("/images/quote/Group 1171275066.svg") no-repeat center;
+  background-size: cover;
+}
+.quote img {
+  position: absolute;
+  right: 5%;
+  bottom: 30%;
+}
+.quote h4 {
+  margin-left: 6.25rem;
+  color: #183B56;
+}
+.quote p {
+  margin-top: 0.625rem;
+  margin-left: 9.375rem;
+}/*# sourceMappingURL=style.css.map */

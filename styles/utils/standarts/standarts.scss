@@ -1,0 +1,58 @@
+@use "../function/_functions.scss" as f;
+
+.intro_1 {
+    display: inline-block;
+    height: f.rem(20);
+    background-color: rgba(54, 179, 126, 0.1);
+    border-radius: f.rem(100);
+  
+    text-align: center;
+    padding: f.rem(5) f.rem(15);
+    color: #36B37E;
+    font-size: f.rem(14);
+  }
+  
+  .intro_2 {
+    display: inline-block;
+    height: f.rem(20);
+    background-color: rgba(21, 101, 216, 0.1);
+    border-radius: f.rem(100);
+  
+    text-align: center;
+    padding: f.rem(5) f.rem(15);
+    color: #1565D8;
+    font-size: f.rem(14);
+  }
+  
+  h1 {
+    font-size: f.rem(76);
+  }
+  h2 {
+    font-size: f.rem(56);
+  }
+  h3 {
+    font-size: f.rem(48);
+  }
+  h4 {
+    font-size: f.rem(36);
+  }
+  h5 {
+    font-size: f.rem(24);
+  }
+  
+  .p1 {
+    font-size: f.rem(24);
+    color: #5A7184;
+  }
+  .p2 {
+    font-size: f.rem(20);
+    color: #5A7184;
+  }
+  .p3 {
+    font-size: f.rem(18);
+    color: #5A7184;
+  }
+  .p4 {
+    font-size: f.rem(16);
+    color: #5A7184;
+  }

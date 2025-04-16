@@ -1,0 +1,17 @@
+@use "sass:math"; // Импортируем math
+
+@function rem($px, $base: 16) {
+  @return math.div($px, $base) * 1rem;
+}
+
+@function per($px, $context: 1920) { // Добавляем дефолтное значение
+  @return math.div($px, $context) * 100%;
+}
+
+@function vw($px, $context: 1920) {
+  @return math.div($px, $context) * 100vw;
+}
+
+@function vh($px, $context: 1080) {
+  @return math.div($px, $context) * 100vh;
+}
