@@ -12,47 +12,91 @@
     font-size: f.rem(14);
   }
   
-  .intro_2 {
-    display: inline-block;
-    height: f.rem(20);
-    background-color: rgba(21, 101, 216, 0.1);
-    border-radius: f.rem(100);
-  
-    text-align: center;
-    padding: f.rem(5) f.rem(15);
-    color: #1565D8;
-    font-size: f.rem(14);
+.intro_2 {
+  display: inline-block;
+  height: f.rem(20);
+  background-color: rgba(21, 101, 216, 0.1);
+  border-radius: f.rem(100);
+
+  text-align: center;
+  padding: f.rem(5) f.rem(15);
+  color: #1565D8;
+  font-size: f.rem(14);
+}
+
+h1 {
+  font-size: f.rem(76);
+}
+h2 {
+  font-size: f.rem(56);
+}
+h3 {
+  font-size: f.rem(48);
+}
+h4 {
+  font-size: f.rem(36);
+}
+h5 {
+  font-size: f.rem(24);
+}
+
+.p1 {
+  font-size: f.rem(24);
+  color: #5A7184;
+}
+.p2 {
+  font-size: f.rem(20);
+  color: #5A7184;
+}
+.p3 {
+  font-size: f.rem(18);
+  color: #5A7184;
+}
+.p4 {
+  font-size: f.rem(16);
+  color: #5A7184;
+}
+
+.button-left-arrow, .button-right-arrow{
+  cursor: pointer;
+  width: f.rem(50);
+  height: f.rem(50);
+  background-color: #1565D8;
+  border-radius: f.rem(2000);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button{
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    span{
+      font-weight: 600;
+    }
   }
-  
-  h1 {
-    font-size: f.rem(76);
+}
+.more-info{
+  cursor: pointer;
+  width: f.rem(190);
+  height: f.rem(60);
+  background-color: #1565D8;
+  border-radius: f.rem(8);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: f.rem(5);
+  button, span{
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border: none;
   }
-  h2 {
-    font-size: f.rem(56);
+  span{
+    font-weight: 600;
   }
-  h3 {
-    font-size: f.rem(48);
-  }
-  h4 {
-    font-size: f.rem(36);
-  }
-  h5 {
-    font-size: f.rem(24);
-  }
-  
-  .p1 {
-    font-size: f.rem(24);
-    color: #5A7184;
-  }
-  .p2 {
-    font-size: f.rem(20);
-    color: #5A7184;
-  }
-  .p3 {
-    font-size: f.rem(18);
-    color: #5A7184;
-  }
-  .p4 {
-    font-size: f.rem(16);
-    color: #5A7184;
-  }
+
+}

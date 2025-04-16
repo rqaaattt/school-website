@@ -58,4 +58,45 @@ h5 {
 .p4 {
   font-size: 1rem;
   color: #5A7184;
+}
+
+.button-left-arrow, .button-right-arrow {
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: #1565D8;
+  border-radius: 125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-left-arrow button, .button-right-arrow button {
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+.button-left-arrow button span, .button-right-arrow button span {
+  font-weight: 600;
+}
+
+.more-info {
+  cursor: pointer;
+  width: 11.875rem;
+  height: 3.75rem;
+  background-color: #1565D8;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3125rem;
+}
+.more-info button, .more-info span {
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+.more-info span {
+  font-weight: 600;
 }/*# sourceMappingURL=standarts.css.map */
