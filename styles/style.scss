@@ -155,11 +155,15 @@ header.scrolled {
   width: 75vw;
   div{
     border-radius: f.rem(16);
-    img{
-      width: 100%;
-      height: f.rem(550);
-    }
+    width: 100%;
+    height: f.rem(550);
   }
+  #map{
+    border-radius: f.rem(16);
+    width: 100%;
+    height: f.rem(550);
+  }
+
 }
 .heading{
   margin: auto;

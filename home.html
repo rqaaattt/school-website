@@ -17,6 +17,9 @@
 
         <!-- Подключить Google Icons -->
         <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"/>
+
+        <!-- Подключить Yandex Maps API -->
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     </head>
     <body>
         <script type="module" src="styles/utils/scroll-bar/header_scrolling.js"></script>
@@ -67,10 +70,21 @@
             </p>
         </section>
         <section class="location scroll-anim">
-            <div class="image-container skeleton img">
-                <div class="skeleton"></div>
-                <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
-            </div> 
+            <div class="image-container skeleton img" id="map"></div>
+            <script>
+    ymaps.ready(function () {
+      const map = new ymaps.Map("map", {
+        center: [43.217266, 76.868030], //координаты положения
+        zoom: 16
+      });
+
+      const placemark = new ymaps.Placemark([43.217266, 76.868030], { //координаты метки
+        balloonContent: 'gymnasium#1'
+      });
+
+      map.geoObjects.add(placemark);
+    });
+  </script>
         </section>
         <section class="heading scroll-anim">
             <h3 class="montserrat-alt-medium">„Моменты, которые остаются в памяти навсегда.”</h3>
