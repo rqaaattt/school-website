@@ -9,6 +9,10 @@ body {
   justify-content: center;
 }
 
+section {
+  transition: linear 2s;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -328,8 +332,12 @@ header.scrolled {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   background: url("/images/quote/Group 1171275066.svg") no-repeat center;
   background-size: cover;
+}
+.quote h4, .quote p {
+  width: auto;
 }
 .quote img {
   position: absolute;
@@ -457,6 +465,7 @@ header.scrolled {
   margin-top: 3.125rem;
 }
 .additional_info .prove2 .img {
+  width: 71.25rem;
   background-color: #D9D9D9;
   height: 25rem;
   border-radius: 0.5rem;

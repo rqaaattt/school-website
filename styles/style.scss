@@ -10,7 +10,9 @@ body{
   justify-content: center;
 }
 
-
+section{
+  transition: linear 2s;
+}
 header{
   position: sticky;
   top: 0;
@@ -328,8 +330,12 @@ header.scrolled {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   background: url('/images/quote/Group\ 1171275066.svg') no-repeat center;
   background-size: cover;
+  h4, p{
+    width: auto;
+  }
   img{
     position: absolute;
     right: 5%;
@@ -460,6 +466,7 @@ header.scrolled {
     margin: auto;
     margin-top: f.rem(50);
     .img{
+      width: f.rem(1140);
       background-color: #D9D9D9;
       height: f.rem(400);
       border-radius: f.rem(8);

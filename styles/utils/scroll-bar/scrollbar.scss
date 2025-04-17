@@ -1,0 +1,18 @@
+@use "../function/_functions.scss" as f;
+
+::-webkit-scrollbar{
+    width: f.rem(15); 
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #1565D8;
+    border-radius: f.rem(10) 0 0 f.rem(10);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #114999;
+    border-radius: f.rem(10) 0 0 f.rem(10);
+}

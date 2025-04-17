@@ -7,7 +7,7 @@
         <!-- Подключить основные стили -->
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/utils/standarts/standarts.css">
-    
+        <link rel="stylesheet" href="styles/utils/scroll-bar/scrollbar.css">
         <!-- Подключить шрифт Montserrat -->
         <link rel="stylesheet" href="fonts/Montserrat-fonts.css">
     
@@ -18,7 +18,7 @@
         <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"/>
     </head>
     <body>
-        <script src="scroll.js"></script>
+        <script type="module" src="styles/utils/scroll-bar/header_scrolling.js"></script>
         <header id="site-header">
             <div class="header_img">
                 <a><img src="images/logo.png" alt=""></a>
@@ -33,7 +33,7 @@
                 <a class="D montserrat-semibold" href="https://kuula.co/post/n1/collection/7bRxC">3D тур</a>
             </nav>
         </header>
-        <section class="target_of_school">
+        <section class="target_of_school scroll-anim">
             <article class="part1">
                 <img src="images/Qazaqstan.svg" alt="#1gymnasium" style="width: 70%;">
                 <article id="logo_text">
@@ -49,7 +49,7 @@
                     жизни и карьере в современном мире.</p>
             </article>
         </section>
-        <section class="history_of_school">
+        <section class="history_of_school scroll-anim">
             <div class="montserrat-semibold intro_1">ВВЕДЕНИЕ</div>
             <article class="text_box">
                 <h3 class="montserrat-alt-medium">«История школы:</br> от первых шагов до</br> современности.»</h4>
@@ -65,9 +65,9 @@
                 </article>
             </p>
         </section>
-        <section class="location">
+        <section class="location scroll-anim">
         </section>
-        <section class="heading">
+        <section class="heading scroll-anim">
             <h3 class="montserrat-alt-medium">„Моменты, которые остаются в памяти навсегда.”</h3>
             <nav>
                 <button class="montserrat-bold p4 active">Мероприятия</button>
@@ -83,7 +83,7 @@
                 <div class="edge"></div>
             </article>
         </section>
-        <section class="why_us">
+        <section class="why_us scroll-anim">
             <article class="text_box">
                 <div class="montserrat-semibold intro_1">РЕКОМЕНДУЕМОЕ</div>
                 <h3 class="montserrat-alt-medium">Почему „#1gymnasium”?</h3>
@@ -130,22 +130,24 @@
                 </div>
             </article>
         </section>
-        <section class="call_us">
+        <section class="call_us scroll-anim">
             <h2 class="montserrat-alt-medium">Один клик – и мы на</br> связи в WhatsApp!</h2>
             <p class="montserrat-regular p3">Никаких лишних действий – просто нажмите на ссылку и начните общение.</br>
                 Задайте вопрос, получите консультацию</p>
                 <a href="https://wa.me/номер_телефона?text=Ваше%20сообщение" target="_blank"><button class="montserrat-semibold" >Перейти в WhatsApp<span class="material-symbols-outlined">send</span></button></a>
         </section>
-        <section class="quote">
-            <img src="images/quote/Ahmed_B.png" alt="">
-            <h4 class="montserrat-regular">Будущее нашего народа в его</br>
+        
+        <section class="quote scroll-anim">
+            <img src="images/quote/Ahmed_B.png" alt="" id="randomImg">
+            <h4 class="montserrat-regular" id="randomHead">Будущее нашего народа в его</br>
                 детях. Обучение и воспитание</br>
                 молодежи должно быть нашей</br>
                 главной задачей.</h4>
-            <p class="montserrat-regular p3">“Ахмет Байтұрсынұлы - казахский поэт, литературовед,</br>
+            <p class="montserrat-regular p3" id="randomPar">“Ахмет Байтұрсынұлы - казахский поэт, литературовед,</br>
                 публицист, педагог, общественный деятель.”</p>
         </section>
-        <section class="administration">
+        <script src="javascript/quote/main.js"></script>
+        <section class="administration scroll-anim">
             <div class="montserrat-semibold intro_1">РЕКОМЕНДУЕМОЕ</div>
             <div class="text_box">
                 <h4 class="montserrat-alt-medium">«Администрация школы – </br>
@@ -185,14 +187,14 @@
             </div>
         </section>
         <section class="additional_info">
-            <article class="text_box">
+            <article class="text_box scroll-anim">
                 <h2 class="montserrat-alt-medium">С первой — будь первым!</h2>
                 <div class="bottom-line"></div>
                 <p class="p3 montserrat-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </br>
                 Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies.</br>
                 Aliquam elementum nisi ut ipsum elementum, ac lobortis purus mattis.</p>
             </article>
-            <article class="prove1">
+            <article class="prove1 scroll-anim">
                 <div class="box">
                     <div class="img_box">
                         <div class="img"></div>
@@ -239,7 +241,7 @@
                     </div>
                 </div>
             </article>
-            <article class="prove2">
+            <article class="prove2 scroll-anim">
                 <div class="img"></div>
                 <div class="text_box">
                     <div class="box">
@@ -259,5 +261,10 @@
                 </div>
             </article>
         </section>
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+        <!-- <script>console.log("Lenis работает?", typeof Lenis);</script> -->
+        
+        <script src="styles/utils/scroll-bar/scroll.js" defer></script>
+
     </body>
 </html>
