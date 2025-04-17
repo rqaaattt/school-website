@@ -479,8 +479,114 @@ header.scrolled {
       .box{
         width: f.rem(400);
         a{
+          margin: f.rem(10);
           color:#1565D8;
           cursor: pointer;
+        }
+        p{
+          margin-bottom: f.rem(10);
+        }
+      }
+    }
+  }
+}
+.about_events{
+  margin: auto;
+  margin-top: f.rem(100);
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .text_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1{
+      color:#1565D8;
+    }
+  }
+  .photo_box{
+    margin-top: f.rem(60);
+    display: flex;
+    align-items: center;
+    gap: f.rem(30);
+    .photo{
+      background-color: #D9D9D9;
+      border-radius: f.rem(10);
+      width: f.rem(250);
+    }
+    .column1, .column5, .photo_large{
+      height: f.rem(310);
+    }
+    .column2, .column4{
+      display: flex;
+      flex-direction: column;
+      .photo_small{
+        margin: f.rem(20) 0;
+        height: f.rem(200);
+      }
+    }
+    .column3{
+      height: f.rem(600);
+    }
+  }
+  .additional_box{
+    margin-top: f.rem(140);
+    display: flex;
+    align-items: center;
+    p{
+      width: f.rem(400);
+    }
+    .position{
+      position: relative;
+      bottom: f.rem(130)
+    }
+  }
+}
+.achievements{
+  margin-top: f.rem(100);
+  background-color: #F9FBFE;
+  display: flex;
+  justify-content: center;
+  padding: f.rem(135);
+  gap: f.rem(100);
+  .photo_box{
+    position: relative;
+    div{
+      background-color: #D9D9D9;
+      border-radius: f.rem(8);
+    }
+    #photo1{
+      z-index: 1;
+      width: f.rem(460);
+      height: f.rem(560);
+    }
+    #photo2{
+      background-color: #c4c4c4;
+      z-index: 2;
+      position: absolute;
+      right: f.rem(250);
+      bottom: f.rem(-100);
+      width: f.rem(340);
+      height: f.rem(380);
+    }
+  }
+  .achieve_box{
+    .list{
+      margin-top: f.rem(20);
+      display: flex;
+      flex-direction: column;
+      gap: f.rem(40);
+      .box{
+        gap: f.rem(10);
+        display: flex;  
+        .text_box{
+          p{
+            width: f.rem(415);
+          }
         }
       }
     }
