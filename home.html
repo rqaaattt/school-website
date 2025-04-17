@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/utils/standarts/standarts.css">
         <link rel="stylesheet" href="styles/utils/scroll-bar/scrollbar.css">
+        <link rel="stylesheet" href="styles/utils/skeleton/skeleton.css">
         <!-- Подключить шрифт Montserrat -->
         <link rel="stylesheet" href="fonts/Montserrat-fonts.css">
     
@@ -66,6 +67,10 @@
             </p>
         </section>
         <section class="location scroll-anim">
+            <div class="image-container skeleton img">
+                <div class="skeleton"></div>
+                <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+            </div> 
         </section>
         <section class="heading scroll-anim">
             <h3 class="montserrat-alt-medium">„Моменты, которые остаются в памяти навсегда.”</h3>
@@ -78,9 +83,18 @@
                 <button class="montserrat-bold p4">Другое</button>
             </nav>
             <article class="photo">
-                <div class="edge"></div>
-                <div class="central"></div>
-                <div class="edge"></div>
+                <div class="image-container skeleton img edge">
+                    <div class="skeleton"></div>
+                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                </div>
+                <div class="image-container skeleton img central">
+                    <div class="skeleton"></div>
+                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                </div> 
+                <div class="image-container skeleton img edge">
+                    <div class="skeleton"></div>
+                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                </div> 
             </article>
         </section>
         <section class="why_us scroll-anim">
@@ -146,7 +160,9 @@
             <p class="montserrat-regular p3" id="randomPar">“Ахмет Байтұрсынұлы - казахский поэт, литературовед,</br>
                 публицист, педагог, общественный деятель.”</p>
         </section>
-        <script src="javascript/quote/main.js"></script>
+        <script src="javascript/quote/quote_random.js"></script>
+
+
         <section class="administration scroll-anim">
             <div class="montserrat-semibold intro_1">РЕКОМЕНДУЕМОЕ</div>
             <div class="text_box">
@@ -197,7 +213,10 @@
             <article class="prove1 scroll-anim">
                 <div class="box">
                     <div class="img_box">
-                        <div class="img"></div>
+                        <div class="image-container skeleton img">
+                            <div class="skeleton"></div>
+                            <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                        </div> 
                         <div class="number montserrat-bold">1</div>
                     </div>
                     <div class="info_box">
@@ -212,7 +231,10 @@
                 </div>
                 <div class="box">
                     <div class="img_box">
-                        <div class="img"></div>
+                        <div class="image-container skeleton img">
+                            <div class="skeleton"></div>
+                            <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                        </div> 
                         <div class="number montserrat-bold">2</div>
                     </div>
                     <div class="info_box">
@@ -227,7 +249,10 @@
                 </div>
                 <div class="box">
                     <div class="img_box">
-                        <div class="img"></div>
+                        <div class="image-container skeleton img">
+                            <div class="skeleton"></div>
+                            <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                        </div> 
                         <div class="number montserrat-bold">3</div>
                     </div>
                     <div class="info_box">
@@ -242,7 +267,10 @@
                 </div>
             </article>
             <article class="prove2 scroll-anim">
-                <div class="img"></div>
+                <div class="image-container skeleton img">
+                    <div class="skeleton"></div>
+                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                </div> 
                 <div class="text_box">
                     <div class="box">
                         <p class="montserrat-regular p3">Lorem ipsum dolor sit amet, consectetur</br>
@@ -269,17 +297,38 @@
                     We'll continue providing these tools for many years to come.</p>
             </div>
             <div class="photo_box">
-                <div class="column1 photo"></div>
+                <div class="image-container skeleton column1 photo">
+                    <div class="skeleton"></div>
+                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                </div>
                 <div class="column2">
-                    <div class="photo_small photo"></div>
-                    <div class="photo_large photo"></div>
+                    <div class="image-container skeleton photo_small photo">
+                        <div class="skeleton"></div>
+                        <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                    </div>
+                    <div class="image-container skeleton photo_large photo">
+                        <div class="skeleton"></div>
+                        <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                    </div>
                 </div>
-                <div class="column3 photo"></div>
+                <div class="image-container skeleton column3 photo">
+                    <div class="skeleton"></div>
+                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                </div>
                 <div class="column4">
-                    <div class="photo_large photo"></div>
-                    <div class="photo_small photo"></div>
+                    <div class="image-container skeleton photo_large photo">
+                        <div class="skeleton"></div>
+                        <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                    </div>
+                    <div class="image-container skeleton photo_small photo">
+                        <div class="skeleton"></div>
+                        <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                    </div>
                 </div>
-                <div class="column5 photo"></div>
+                <div class="image-container skeleton column5 photo">
+                    <div class="skeleton"></div>
+                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                </div>
             </div>
             <div class="additional_box">
                 <p class="montserrat-regular p3 position left_align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Nam tempus blandit eleifend.</p>
@@ -288,10 +337,16 @@
 
             </div>
         </section>
-        <section class="achievements">
+        <section class="achievements scroll-anim">
             <div class="photo_box">
-                <div id="photo1"></div>
-                <div id="photo2"></div>
+                <div class="image-container skeleton photo1">
+                    <div class="skeleton"></div>
+                    <img src="path-to-your-image.jpg" alt="Image" onload="this.parentElement.classList.remove('skeleton')">
+                  </div>
+                  <div class="image-container skeleton photo2">
+                    <div class="skeleton"></div>
+                    <img src="path-to-your-image.jpg" alt="Image" onload="this.parentElement.classList.remove('skeleton')">
+                  </div>
                 <!-- сделать систему рандомных фоток -->
             </div>
             <div class="achieve_box">
@@ -328,6 +383,55 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="about_mugs scroll-anim">
+            <div class="text_box">
+                <div class="montserrat-semibold intro_1">ПОЛЕЗНОЕ</div>
+                <h1 class="montserrat-alt-semibold">О КРУЖКАХ</h1>
+                <p class="montserrat-regular p3">Hasten provides privacy-focused accounting tools to our wonderful customers.</br>
+                    We'll continue providing these tools for many years to come.</p>
+            </div>
+            <div class="photo_box">
+                <div class="image-container skeleton column1 photo">
+                    <div class="skeleton"></div>
+                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                </div>
+                <div class="column2">
+                    <div class="image-container skeleton photo_small photo">
+                        <div class="skeleton"></div>
+                        <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                    </div>
+                    <div class="image-container skeleton photo_large photo">
+                        <div class="skeleton"></div>
+                        <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                    </div>
+                </div>
+                <div class="image-container skeleton column3 photo">
+                    <div class="skeleton"></div>
+                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                </div>
+                <div class="column4">
+                    <div class="image-container skeleton photo_large photo">
+                        <div class="skeleton"></div>
+                        <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                    </div>
+                    <div class="image-container skeleton photo_small photo">
+                        <div class="skeleton"></div>
+                        <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                    </div>
+                </div>
+                <div class="image-container skeleton column5 photo">
+                    <div class="skeleton"></div>
+                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                </div>
+            </div>
+            <div class="additional_box">
+                <p class="montserrat-regular p3 position left_align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Nam tempus blandit eleifend.</p>
+                <p class="montserrat-regular p3 center_align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Nam tempus blandit eleifend.</p>
+                <p class="montserrat-regular p3 position right_align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Nam tempus blandit eleifend.</p>
+
             </div>
         </section>
         <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>

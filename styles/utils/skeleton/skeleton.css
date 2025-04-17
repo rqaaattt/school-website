@@ -1,0 +1,28 @@
+.skeleton {
+    background-color: #e0e0e0;
+    background-image: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: loading 4s infinite ease-in-out;
+    border-radius: 5px;
+  }
+
+@keyframes loading {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  font-size: 0;
+  color: transparent;
+}
+.image-container.skeleton img {
+  display: block;
+}

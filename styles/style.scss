@@ -153,10 +153,13 @@ header.scrolled {
   margin: auto;
   margin-top: f.rem(100);
   width: 75vw;
-  height: f.rem(550);
-
-  background-color: #D9D9D9;
-  border-radius: f.rem(24);
+  div{
+    border-radius: f.rem(16);
+    img{
+      width: 100%;
+      height: f.rem(550);
+    }
+  }
 }
 .heading{
   margin: auto;
@@ -490,7 +493,7 @@ header.scrolled {
     }
   }
 }
-.about_events{
+.about_events, .about_mugs{
   margin: auto;
   margin-top: f.rem(100);
   width: 90vw;
@@ -559,12 +562,12 @@ header.scrolled {
       background-color: #D9D9D9;
       border-radius: f.rem(8);
     }
-    #photo1{
+    .photo1{
       z-index: 1;
       width: f.rem(460);
       height: f.rem(560);
     }
-    #photo2{
+    .photo2{
       background-color: #c4c4c4;
       z-index: 2;
       position: absolute;
