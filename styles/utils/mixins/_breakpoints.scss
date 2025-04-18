@@ -1,0 +1,38 @@
+// utils/mixins/_breakpoints.scss
+
+@mixin mobile-sm {
+    @media (max-width: 479px) {
+      @content;
+    }
+  }
+  
+  @mixin mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (min-width: 768px) and (max-width: 1023px) {
+      @content;
+    }
+  }
+  
+  @mixin laptop {
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      @content;
+    }
+  }
+  
+  @mixin laptop-lg {
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media (min-width: 1920px) {
+      @content;
+    }
+  }
+  

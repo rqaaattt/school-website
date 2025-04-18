@@ -1,0 +1,170 @@
+
+@use "utils/function/_functions.scss" as f;
+@use "utils/mixins/_breakpoints.scss" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section {
+  transition: linear 2s;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  margin: f.rem(20) 0;
+  padding: 0 f.rem(80);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  transition: background-color 2s ease, backdrop-filter 1s ease;
+
+  .header_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .element {
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #dadada, #6d99d6, #1565D8, #1565D8);
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
+      }
+
+      &:hover::before {
+        transform: translateX(100%);
+      }
+    }
+
+    h1 {
+      color: #183B56;
+      font-size: f.rem(24);
+    }
+
+    img {
+      width: f.rem(120);
+      height: f.rem(120);
+    }
+
+    a {
+      cursor: pointer;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: f.rem(24);
+    font-weight: 600;
+    cursor: pointer;
+
+    a {
+      user-select: none;
+      padding: f.rem(10) f.rem(20);
+      color: #183B56;
+      text-decoration: none;
+      display: flex;
+      transition: linear 0.5s;
+
+      &:hover {
+        background-color: rgb(23, 109, 196);
+        color: #fff;
+      }
+
+      &.D:hover {
+        background-color: rgba(23, 109, 196, 1);
+      }
+    }
+  }
+
+  .D {
+    margin: 0 f.rem(20);
+    border: f.rem(4) rgb(23, 109, 196) solid;
+    border-radius: f.rem(8);
+    padding: f.rem(15) f.rem(30);
+    text-decoration: none;
+    color: rgb(23, 109, 196);
+    font-weight: 700;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    padding: 0 f.rem(20);
+
+    .header_img {
+      flex-direction: column;
+      img {
+        width: f.rem(80);
+        height: f.rem(80);
+      }
+      h1 {
+        font-size: f.rem(18);
+        text-align: center;
+      }
+    }
+
+    nav {
+      flex-direction: column;
+      font-size: f.rem(18);
+      a {
+        padding: f.rem(8) f.rem(10);
+      }
+    }
+
+    .D {
+      margin-top: f.rem(10);
+      padding: f.rem(10) f.rem(20);
+      font-size: f.rem(14);
+    }
+  }
+
+  @include tablet {
+    padding: 0 f.rem(40);
+    .header_img img {
+      width: f.rem(100);
+      height: f.rem(100);
+    }
+    nav {
+      font-size: f.rem(20);
+    }
+  }
+
+  @include laptop {
+    padding: 0 f.rem(60);
+  }
+}
+
+header.scrolled {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+// Здесь будут адаптивные стили для всех остальных секций
+// Например: .target_of_school, .heading, .why_us и т.д.
+
+// Каждую секцию оборачивай в @include mobile, tablet и т.д. по необходимости
+// Используй f.rem(), f.per(), f.vw(), f.vh() — в зависимости от задач на адаптацию
