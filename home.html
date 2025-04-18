@@ -25,7 +25,7 @@
         <script type="module" src="styles/utils/scroll-bar/header_scrolling.js"></script>
         <header id="site-header">
             <div class="header_img">
-                <a><img src="images/logo.png" alt=""></a>
+                <a><img src="images/logo.svg" alt=""></a>
                 <a><h1 class="montserrat-bold element">GYMNA</br>SIUM#1</h1></a>
             </div>
             <nav> 
@@ -488,15 +488,56 @@
             </div>    
         </section>
 
-        <footer>
-            <div class="wave">
-            </div>
-            <div class="info">
-                <h4 class="montserrat-alt-medium">Один клик – и мы на связи в WhatsApp!</h4>
+        <footer class="scroll-anim">
+            <div class="wave"></div>
+            <section class="wh">
+                <article class="wh_left">
+                    <h2 class="montserrat-alt-medium">Один клик – и мы на</br> связи в WhatsApp!</h2>
                     <a href="https://wa.me/номер_телефона?text=Ваше%20сообщение" target="_blank"><button class="montserrat-semibold" >Перейти в WhatsApp<span class="material-symbols-outlined">send</span></button></a>
-                    <p>Рекомендуется писать с 8:00-20:00, для получения быстрого ответа.</p>
-            </div>
+                    <p class="montserrat-regular">Рекомендуется писать с 8:00-20:00, для получения быстрого ответа.</p>
+                </article>
+                <article class="wh_card">
+                    <div class="box">
+                        <div class="image-container skeleton column1 photo">
+                            <div class="skeleton"></div>
+                            <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
+                        </div>
+                        <h5 class="montserrat-alt-medium">The best aticles every week</h5>
+                        <p class="p3 montserrat-regular">Our insurance plans offers are priced the same everywhere else.</p> 
+                    </div>
+                    <div class="bk_up"></div>
+                    <div class="bk_down"></div> 
+                </article>
+            </section>
+            <section class="footer">
+                <main class="ft_top">
+                    <div class="ft_left">
+                        <img src="images/logo.svg" alt="" class="logo">
+                        <a href="https://2gis.kz/almaty/firm/9429940000802335" class="lf_addres montserrat-regular p4">23г, 10-й микрорайон, Алматы</a>
+                        <div class="social_media">
+                            <img src="images/social_media/instagram.svg" alt="">
+                            <img src="images/social_media/instagram.svg" alt="" >
+                            <img src="images/social_media/instagram.svg" alt="" >
+                        </div>  
+                    </div>
+                    <div class="ft_right">
+                    <p class="ft_text p1 montserrat-regular">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Aliquam elementum nisi ut ipsum elementum, ac lobortis purus mattis. 
+                    </p>
+                    <div class="links">
+                        <a href="" class="ft_addres p3 montserrat-bold">Школьная жизнь</a>
+                        <a href="" class="ft_addres p3 montserrat-bold">Родителям</a>
+                        <a href="" class="ft_addres p3 montserrat-bold">Поступление</a>
+                        <a href="" class="ft_addres p3 montserrat-bold">Контакты</a>
+                    </div>
+                    </div>
+                </main>
+            </section>
+            <section class="gymnasium_life">
+                <a><img src="images/gymnasium_life_logo 1.svg" alt=""></a>
+            </section>
         </footer>
+        
         <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
         <!-- <script>console.log("Lenis работает?", typeof Lenis);</script> -->
         
