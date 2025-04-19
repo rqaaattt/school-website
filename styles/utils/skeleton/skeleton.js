@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
+
+  document.addEventListener("DOMContentLoaded", () => {
     const wrappers = document.querySelectorAll(".skeleton-wrapper");
 
     wrappers.forEach(wrapper => {

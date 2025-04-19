@@ -1,46 +1,45 @@
 .skeleton-wrapper {
-    position: relative;
+  position: relative;
+  width: 100%;
+  height: 300px; // Задай нужную высоту
+  overflow: hidden;
+
+  img {
     width: 100%;
-    height: 500px;
-    overflow: hidden;
-  
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-    }
-  
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .skeleton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #eee 25%, #ddd 50%, #eee 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.2s infinite;
+  }
+
+  &.loaded {
     .skeleton {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, #eee 25%, #ddd 50%, #eee 75%);
-      background-size: 200% 100%;
-      animation: shimmer 1.2s infinite;
+      display: none;
     }
-  
-    &.loaded {
-      .skeleton {
-        display: none;
-      }
-  
-      img {
-        opacity: 1;
-      }
+
+    img {
+      opacity: 1;
     }
   }
-  
-  @keyframes shimmer {
-    0% {
-      background-position: -100% 0;
-    }
-    100% {
-      background-position: 100% 0;
-    }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -100% 0;
   }
-  
+  100% {
+    background-position: 00% 0;
+  }
+}

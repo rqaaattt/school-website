@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
 }
+
 body{
   display: flex;
   flex-direction: column;
@@ -424,10 +425,9 @@ header.scrolled {
       .img_box{
         width: 100%;
         position: relative;
-        .img{
+        .skeleton-wrapper{
           width: 100%;
           height: f.rem(260);
-          background-color: #D9D9D9;
           border-radius: f.rem(8);
           
         }
@@ -479,9 +479,8 @@ header.scrolled {
    
     margin-top: f.rem(50);
     
-    .img{
+    .skeleton-wrapper{
       width: f.rem(1140);
-      background-color: #D9D9D9;
       height: f.rem(400);
       border-radius: f.rem(8);
     }
@@ -543,7 +542,7 @@ header.scrolled {
         height: f.rem(200);
       }
     }
-    .column3{
+    .column3, .column3 img{
       height: f.rem(600);
     }
   }
@@ -570,7 +569,6 @@ header.scrolled {
   .photo_box{
     position: relative;
     div{
-      background-color: #D9D9D9;
       border-radius: f.rem(8);
     }
     .photo1{
@@ -579,7 +577,6 @@ header.scrolled {
       height: f.rem(560);
     }
     .photo2{
-      background-color: #c4c4c4;
       z-index: 2;
       position: absolute;
       right: f.rem(250);
@@ -745,6 +742,9 @@ footer{
   .wh_card{
     height: f.rem(600);
     position: relative;
+    .skeleton-wrapper{
+      border-radius: f.rem(16);
+    }
     .box{
       position: relative;
       z-index: 2;
