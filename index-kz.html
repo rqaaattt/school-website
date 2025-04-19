@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GYMNASIUM#1</title>
+        <!-- Подключить основные стили -->
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/utils/standarts/standarts.css">
+        <link rel="stylesheet" href="styles/utils/scroll-bar/scrollbar.css">
+        <link rel="stylesheet" href="styles/utils/skeleton/skeleton.css">
+        <!-- Подключить шрифт Montserrat -->
+        <link rel="stylesheet" href="fonts/Montserrat-fonts.css">
+    
+        <!-- Подключить шрифт Montserrat Alternatives -->
+        <link rel="stylesheet" href="fonts/Montserrat-Alternatives-fonts.css">
+
+        <!-- Подключить Google Icons -->
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"/>
+
+        <!-- Подключить Yandex Maps API -->
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    </head>
+    <body>
+        <script type="module" src="styles/utils/scroll-bar/header_scrolling.js"></script>
+        <header id="site-header">
+            <div class="header_img">
+                <a><img src="images/logo.svg" alt=""></a>
+                <a><h1 class="montserrat-bold element">GYMNA</br>SIUM#1</h1></a>
+            </div>
+            <nav> 
+                <a href="#" class="montserrat-semibold">Мектеп туралы</a>
+                <a href="#" class="montserrat-semibold">Мектеп өмірі</a>
+                <a href="#" class="montserrat-semibold">Ата-аналарға</a>
+                <a href="#" class="montserrat-semibold">Қабылдау</a>
+                <a href="#" class="montserrat-semibold">Байланыс</a>
+                <a class="D montserrat-semibold" href="https://kuula.co/post/n1/collection/7bRxC">3D тур</a>
+                <div class="language-selector">
+                    <button id="current-lang" aria-expanded="false" class="montserrat-semibold">
+                      KZ
+                      <span class="material-symbols-outlined arrow">arrow_back_ios</span>
+                    </button>
+                    <ul id="lang-dropdown" class="dropdown hidden">
+                      <li data-lang="ru" data-file="index-ru.html" class="montserrat-semibold">RU</li>
+                      <li data-lang="en" data-file="index-en.html" class="montserrat-semibold">EN</li>
+                    </ul>
+                </div>
+                <script src="javascript/language.js"></script>
+            </nav>
+        </header>
+        <section class="target_of_school scroll-anim">
+            <article class="part1">
+                <img src="images/Qazaqstan.svg" alt="#1gymnasium" style="width: 70%;">
+                <article id="logo_text">
+                    <span class="montserrat-alt-medium gradient-text">#1gymnasium</span>
+                    <img src="images/icons8-atom 1.svg" alt="">
+                </article>
+            </article>
+            <article class="text_box">
+                <h3 class="montserrat-alt-medium">Миссия школы – создаем</br>
+                    путь к знаниям и успеху,</h3>
+                <p class="montserrat-regular p1">обеспечивая качественное образование,<br>
+                    которое подготовит учеников к успешной<br>
+                    жизни и карьере в современном мире.</p>
+            </article>
+        </section>
+        <section class="history_of_school scroll-anim">
+            <div class="montserrat-semibold intro_1">ВВЕДЕНИЕ</div>
+            <article class="text_box">
+                <h3 class="montserrat-alt-medium">«История школы:</br> от первых шагов до</br> современности.»</h4>
+                <p class="montserrat-regular p3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. </br>
+                    Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. </br>
+                    Aliquam elementum nisi ut ipsum elementum, ac lobortis purus mattis. </br>
+                    </br>
+                    Sed faucibus, eros at hendrerit condimentum, ligula ex sollicitudin nibh,</br>
+                    id laoreet nisl erat ut ante. Curabitur in laoreet mi. </br>
+                    Vestibulum ante ipsum primis in faucibus orci luctus</br>
+                    et ultrices posuere cubilia curae; Nulla non tempor dolor. </br>
+                </article>
+            </p>
+        </section>
+        <section class="location scroll-anim">
+            <div class="image-container skeleton img" id="map"></div>
+            <script>
+                ymaps.ready(function () {
+                  const map = new ymaps.Map("map", {
+                    center: [43.217266, 76.868030], //координаты положения
+                    zoom: 16
+                  });
+              
+                  const placemark = new ymaps.Placemark([43.217266, 76.868030], { //координаты метки
+                    balloonContent: 'gymnasium#1'
+                  });
+              
+                  map.geoObjects.add(placemark);
+                });
+            </script>
+        </section>
+        <section class="heading scroll-anim">
+            <h3 class="montserrat-alt-medium">„Моменты, которые остаются в памяти навсегда.”</h3>
+            <nav>
+                <button class="montserrat-bold p4 active">Мероприятия</button>
+                <button class="montserrat-bold p4">Учёба</button>
+                <button class="montserrat-bold p4">Постановки</button>
+                <button class="montserrat-bold p4">Победы</button>
+                <button class="montserrat-bold p4">Процветания</button>
+                <button class="montserrat-bold p4">Другое</button>
+            </nav>
+            <article class="photo">
+                <div class="skeleton-wrapper edge">
+                    <img src="images/" alt="Loaded image" loading="lazy" />
+                    <div class="skeleton"></div>
+                </div>
+                <div class="skeleton-wrapper central">
+                    <img src="images/tet.png" alt="Loaded image" loading="lazy" />
+                    <div class="skeleton"></div>
+                </div>
+                <div class="skeleton-wrapper edge">
+                    <img src="images/tst.png" alt="Loaded image" loading="lazy" />
+                    <div class="skeleton"></div>
+                </div>
+            </article>
+        </section>
+        <section class="why_us scroll-anim">
+            <article class="text_box">
+                <div class="montserrat-semibold intro_1">РЕКОМЕНДУЕМОЕ</div>
+                <h3 class="montserrat-alt-medium">Почему „#1gymnasium”?</h3>
+                <p class="montserrat-regular p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies.</br>
+                    Aliquam elementum nisi ut ipsum elementum, ac lobortis purus mattis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. </br>
+                    Quos sequi quis, similique magni, inventore velit quisquam aspernatur corrupti est asperiores, ipsa omnis adipisci distinctio!</p>
+                </article>
+            <article class="prove">
+                <div class="element">
+                    <img src="images/why_us/Icon.svg" alt="">
+                    <h5 class="montserrat-alt-medium">Lorem, ipsum.</h5>
+                    <p class="montserrat-regular p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</br>
+                        Alias laborum dolor amet atque officiis. Minima, minus</p>
+                </div>
+                <div class="element">
+                    <img src="images/why_us/Icon.svg" alt="">
+                    <h5 class="montserrat-alt-medium">Lorem, ipsum.</h5>
+                    <p class="montserrat-regular p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</br>
+                        Alias laborum dolor amet atque officiis. Minima, minus.</p>
+                </div>
+                <div class="element">
+                    <img src="images/why_us/Icon.svg" alt="">
+                    <h5 class="montserrat-alt-medium">Lorem, ipsum.</h5>
+                    <p class="montserrat-regular p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</br>
+                        Alias laborum dolor amet atque officiis. Minima, minus.</p>
+                </div>
+                <div class="element">
+                    <img src="images/why_us/Icon.svg" alt="">
+                    <h5 class="montserrat-alt-medium">Lorem, ipsum.</h5>
+                    <p class="montserrat-regular p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</br>
+                        Alias laborum dolor amet atque officiis. Minima, minus.</p>
+                </div>
+                <div class="element">
+                    <img src="images/why_us/Icon.svg" alt="">
+                    <h5 class="montserrat-alt-medium">Lorem, ipsum.</h5>
+                    <p class="montserrat-regular p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</br>
+                        Alias laborum dolor amet atque officiis. Minima, minus.</p>
+                </div>
+                <div class="element">
+                    <img src="images/why_us/Icon.svg" alt="">
+                    <h5 class="montserrat-alt-medium">Lorem, ipsum.</h5>
+                    <p class="montserrat-regular p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</br>
+                        Alias laborum dolor amet atque officiis. Minima, minus</p>
+                </div>
+            </article>
+        </section>
+        <section class="call_us scroll-anim">
+            <h2 class="montserrat-alt-medium">Один клик – и мы на</br> связи в WhatsApp!</h2>
+            <p class="montserrat-regular p3">Никаких лишних действий – просто нажмите на ссылку и начните общение.</br>
+                Задайте вопрос, получите консультацию</p>
+                <a href="https://wa.me/номер_телефона?text=Ваше%20сообщение" target="_blank"><button class="montserrat-semibold" >Перейти в WhatsApp<span class="material-symbols-outlined">send</span></button></a>
+        </section>
+        
+        <section class="quote scroll-anim">
+            <img src="images/quote/Ahmed_B.png" alt="" id="randomImg">
+            <h4 class="montserrat-regular" id="randomHead">Будущее нашего народа в его</br>
+                детях. Обучение и воспитание</br>
+                молодежи должно быть нашей</br>
+                главной задачей.</h4>
+            <p class="montserrat-regular p3" id="randomPar">“Ахмет Байтұрсынұлы - казахский поэт, литературовед,</br>
+                публицист, педагог, общественный деятель.”</p>
+        </section>
+        <script src="javascript/quote/quote_random.js"></script>
+
+
+        <section class="administration scroll-anim">
+            <div class="montserrat-semibold intro_1">РЕКОМЕНДУЕМОЕ</div>
+            <div class="text_box">
+                <h3 class="montserrat-alt-medium"><span style="color: #1565D8">«Администрация школы – </span></br>
+                    крепкий фундамент нашего успеха..»</h3>
+                <div class="more-info">
+                   <button class="montserrat-bold p3">Подробнее</button>
+                   <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="button-left-arrow">
+                    <button><span class="material-symbols-outlined">arrow_back</span></button>
+                </div>
+                <div class="person">
+                    <img src="images/structures/Polygon 16.png" alt="" srcset="">
+                    <h5 class="montserrat-alt-medium">Фамилия Имя Отчество</h5>
+                    <p class="montserrat-regular p4">Должность</p>
+                </div>
+                <div class="person">
+                    <img src="images/structures/Polygon 16.png" alt="" srcset="">
+                    <h5 class="montserrat-alt-medium">Фамилия Имя Отчество</h5>
+                    <p class="montserrat-regular p4">Должность</p>
+                </div>
+                <div class="person">
+                    <img src="images/structures/Polygon 16.png" alt="" srcset="">
+                    <h5 class="montserrat-alt-medium">Фамилия Имя Отчество</h5>
+                    <p class="montserrat-regular p4">Должность</p>
+                </div>
+                <div class="person">
+                    <img src="images/structures/Polygon 16.png" alt="" srcset="">
+                    <h5 class="montserrat-alt-medium">Фамилия Имя Отчество</h5>
+                    <p class="montserrat-regular p4">Должность</p>
+                </div>
+                <div class="button-right-arrow">
+                    <button><span class="material-symbols-outlined">arrow_forward</span></button>
+                </div>
+            </div>
+        </section>
+        <section class="additional_info">
+            <article class="text_box scroll-anim">
+                <h2 class="montserrat-alt-medium">С первой — будь первым!</h2>
+                <div class="bottom-line"></div>
+                <p class="p3 montserrat-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </br>
+                Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies.</br>
+                Aliquam elementum nisi ut ipsum elementum, ac lobortis purus mattis.</p>
+            </article>
+            <article class="prove1 scroll-anim">
+                <div class="box">
+                    <div class="img_box">
+                        <div class="skeleton-wrapper">
+                            <img src="images/tes" alt="Loaded image" loading="lazy" />
+                            <div class="skeleton"></div>
+                        </div>
+                        <div class="number montserrat-bold">1</div>
+                    </div>
+                    <div class="info_box">
+                        <div class="line"></div>
+                        <div class="text_box">
+                            <h5 class="montserrat-alt-medium">Research First</h5>
+                            <p class="montserrat-regular p4">Sed dignissim vel tortor vitae consequat.</br>
+                            Praesent tincidunt turpis vel sodales.</br>
+                            Duis blandit ut orci vel laoreet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_box">
+                        <div class="skeleton-wrapper">
+                            <img src="images/tes.png" alt="Loaded image" loading="lazy" />
+                            <div class="skeleton"></div>
+                        </div>
+                        <div class="number montserrat-bold">2</div>
+                    </div>
+                    <div class="info_box">
+                        <div class="line"></div>
+                        <div class="text_box">
+                            <h5 class="montserrat-alt-medium">Research First</h5>
+                            <p class="montserrat-regular p4">Sed dignissim vel tortor vitae consequat.</br>
+                            Praesent tincidunt turpis vel sodales.</br>
+                            Duis blandit ut orci vel laoreet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img_box">
+                        <div class="skeleton-wrapper">
+                            <img src="images/tes" alt="Loaded image" loading="lazy" />
+                            <div class="skeleton"></div>
+                        </div>
+                        <div class="number montserrat-bold">3</div>
+                    </div>
+                    <div class="info_box">
+                        <div class="line"></div>
+                        <div class="text_box">
+                            <h5 class="montserrat-alt-medium">Research First</h5>
+                            <p class="montserrat-regular p4">Sed dignissim vel tortor vitae consequat.</br>
+                            Praesent tincidunt turpis vel sodales.</br>
+                            Duis blandit ut orci vel laoreet.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="prove2 scroll-anim">
+                <div class="skeleton-wrapper">
+                    <img src="images/tst.png" alt="Loaded image" loading="lazy" />
+                    <div class="skeleton"></div>
+                </div>
+                <div class="text_box">
+                    <div class="box">
+                        <p class="montserrat-regular p3">Lorem ipsum dolor sit amet, consectetur</br>
+                            adipiscing elit. Morbi at feugiat metus</br>
+                            Nam viverra lectus sed scelerisque ultricies.</br>
+                            Nam tempus blandit eleifend.</p>
+                        <a class="montserrat-bold">Узнать подробнее</a>
+                    </div>
+                    <div class="box">
+                        <p class="montserrat-regular p3">Lorem ipsum dolor sit amet, consectetur</br>
+                            adipiscing elit. Morbi at feugiat metus</br>
+                            Nam viverra lectus sed scelerisque ultricies.</br>
+                            Nam tempus blandit eleifend.</p>
+                        <a class="montserrat-bold">Узнать подробнее</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="about_events scroll-anim">
+            <div class="text_box">
+                <div class="montserrat-semibold intro_1">ПОЛЕЗНОЕ</div>
+                <h1 class="montserrat-alt-semibold">О МЕРОПРИЯТИЯХ</h1>
+                <p class="montserrat-regular p3">Hasten provides privacy-focused accounting tools to our wonderful customers.</br>
+                    We'll continue providing these tools for many years to come.</p>
+            </div>
+            <div class="photo_box">
+                <div class="skeleton-wrapper column1 photo">
+                    <img src="images/est.png" alt="Loaded image" loading="lazy" />
+                    <div class="skeleton"></div>
+                </div>
+                <div class="column2">
+                    <div class="skeleton-wrapper photo_small photo">
+                        <img src="images/tet.png" alt="Loaded image" loading="lazy" />
+                        <div class="skeleton"></div>
+                    </div>
+                    <div class="skeleton-wrapper photo_large photo">
+                        <img src="images/tes.png" alt="Loaded image" loading="lazy" />
+                        <div class="skeleton"></div>
+                    </div>
+                </div>
+                <div class="skeleton-wrapper column3 photo">
+                    <img src="images/est.pg" alt="Loaded image" loading="lazy" />
+                    <div class="skeleton"></div>
+                </div>
+                <div class="column4">
+                    <div class="skeleton-wrapper photo_large photo">
+                        <img src="images/tst.png" alt="Loaded image" loading="lazy" />
+                        <div class="skeleton"></div>
+                    </div>
+                    <div class="skeleton-wrapper photo_small photo">
+                        <img src="images/tst.ng" alt="Loaded image" loading="lazy" />
+                        <div class="skeleton"></div>
+                    </div>
+                </div>
+                <div class="skeleton-wrapper column5 photo">
+                    <img src="images/testpng" alt="Loaded image" loading="lazy" />
+                    <div class="skeleton"></div>
+                </div>
+            </div>
+            <div class="additional_box">
+                <p class="montserrat-regular p3 position left_align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Nam tempus blandit eleifend.</p>
+                <p class="montserrat-regular p3 center_align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Nam tempus blandit eleifend.</p>
+                <p class="montserrat-regular p3 position right_align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Nam tempus blandit eleifend.</p>
+
+            </div>
+        </section>
+        <section class="achievements scroll-anim">
+            <div class="photo_box">
+                <div class="skeleton-wrapper photo1">
+                    <img src="images/test.ng" alt="Loaded image" loading="lazy" />
+                    <div class="skeleton"></div>
+                </div>
+                <div class="skeleton-wrapper photo2">
+                    <img src="images/test.ng" alt="Loaded image" loading="lazy" />
+                    <div class="skeleton"></div>
+                </div>
+                <!-- сделать систему рандомных фоток -->
+            </div>
+            <div class="achieve_box">
+                <div class="montserrat-semibold intro_2">ИНТЕРЕСНО</div>
+                <h4 class="montserrat-alt-medium">Достижения</br>
+                    наших учеников:</h4>
+                <div class="list">
+                    <div class="box">
+                        <img src="images/structures/num1.svg" alt="">
+                        <div class="text_box">
+                            <h5 class="montserrat-alt-medium">Select Your Moments or City</h5>
+                            <p class="montserrat-regular p3">Share any space from a shared living room to a second home and everything in-between.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/structures/num2.svg" alt="">
+                        <div class="text_box">
+                            <h5 class="montserrat-alt-medium">Select Your Moments or City</h5>
+                            <p class="montserrat-regular p3">Share any space from a shared living room to a second home and everything in-between.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/structures/num3.svg" alt="">
+                        <div class="text_box">
+                            <h5 class="montserrat-alt-medium">Select Your Moments or City</h5>
+                            <p class="montserrat-regular p3">Share any space from a shared living room to a second home and everything in-between.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/structures/num4.svg" alt="">
+                        <div class="text_box">
+                            <h5 class="montserrat-alt-medium">Select Your Moments or City</h5>
+                            <p class="montserrat-regular p3">Share any space from a shared living room to a second home and everything in-between.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_events scroll-anim">
+            <div class="text_box">
+                <div class="montserrat-semibold intro_1">ПОЛЕЗНОЕ</div>
+                <h1 class="montserrat-alt-semibold">О КРУЖКАХ</h1>
+                <p class="montserrat-regular p3">Hasten provides privacy-focused accounting tools to our wonderful customers.</br>
+                    We'll continue providing these tools for many years to come.</p>
+            </div>
+            <div class="photo_box">
+                <div class="skeleton-wrapper column1 photo">
+                    <img src="images/est.png" alt="Loaded image" loading="lazy" />
+                    <div class="skeleton"></div>
+                </div>
+                <div class="column2">
+                    <div class="skeleton-wrapper photo_small photo">
+                        <img src="images/tst.png" alt="Loaded image" loading="lazy" />
+                        <div class="skeleton"></div>
+                    </div>
+                    <div class="skeleton-wrapper photo_large photo">
+                        <img src="images/tes.png" alt="Loaded image" loading="lazy" />
+                        <div class="skeleton"></div>
+                    </div>
+                </div>
+                <div class="skeleton-wrapper column3 photo">
+                    <img src="images/est.pg" alt="Loaded image" loading="lazy" />
+                    <div class="skeleton"></div>
+                </div>
+                <div class="column4">
+                    <div class="skeleton-wrapper photo_large photo">
+                        <img src="images/tet.png" alt="Loaded image" loading="lazy" />
+                        <div class="skeleton"></div>
+                    </div>
+                    <div class="skeleton-wrapper photo_small photo">
+                        <img src="images/tst.ng" alt="Loaded image" loading="lazy" />
+                        <div class="skeleton"></div>
+                    </div>
+                </div>
+                <div class="skeleton-wrapper column5 photo">
+                    <img src="images/est.png" alt="Loaded image" loading="lazy" />
+                    <div class="skeleton"></div>
+                </div>
+            </div>
+            <div class="additional_box">
+                <p class="montserrat-regular p3 position left_align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Nam tempus blandit eleifend.</p>
+                <p class="montserrat-regular p3 center_align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Nam tempus blandit eleifend.</p>
+                <p class="montserrat-regular p3 position right_align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Nam tempus blandit eleifend.</p>
+
+            </div>
+        </section>
+        <section class="feedback scroll-anim">
+            <div class="text_box">
+                <div class="title">
+                    <img src="images/structures/quote_sym.svg" alt="">
+                    <h4 class="montserrat-alt-medium">Что родители</br>
+                        думают о нас:</h4>
+                </div>
+                <div class="arrows">
+                    <button><span class="material-symbols-outlined standart">arrow_back</span></button>
+                    <button><span class="material-symbols-outlined">arrow_forward</span></button>
+                </div>
+            </div>
+            <div class="list">
+                <div class="box">
+                    <h5 class="montserrat-alt-medium">Great Services with Good Quality
+                        Photographers PhotoScape</h5>
+                    <p class="montserrat-regular p3 special">I truly have nothing but the highest praise and appreciation for all that you did for us. Saving me on the video montage projection was huge, and even more important the amazing pictures. </p>
+                    <div class="author">
+                        <img src="" alt="">
+                        <div class="text_box">
+                            <p class="p3 montserrat-bold">Pricillia Makalew</p>
+                            <p class="p4 montserrat-regular">EhyaScape Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h5 class="montserrat-alt-medium">Great Services with Good Quality
+                        Photographers PhotoScape</h5>
+                    <p class="montserrat-regular p3 special">I truly have nothing but the highest praise and appreciation for all that you did for us. Saving me on the video montage projection was huge, and even more important the amazing pictures. </p>
+                    <div class="author">
+                        <img src="" alt="">
+                        <div class="text_box">
+                            <p class="p3 montserrat-bold">Pricillia Makalew</p>
+                            <p class="p4 montserrat-regular">EhyaScape Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <footer class="scroll-anim">
+            <div class="wave">
+                <img src="images/structures/Wave.svg" alt="">
+            </div>
+            <section class="wh">
+                <article class="wh_left">
+                    <h2 class="montserrat-alt-medium">Один клик – и мы на</br> связи в WhatsApp!</h2>
+                    <a href="https://wa.me/номер_телефона?text=Ваше%20сообщение" target="_blank"><button class="montserrat-semibold" >Перейти в WhatsApp<span class="material-symbols-outlined">send</span></button></a>
+                    <p class="montserrat-regular">Рекомендуется писать с 8:00-20:00, для получения быстрого ответа.</p>
+                </article>
+                <article class="wh_card">
+                    <div class="box">
+                        <div class="skeleton-wrapper">
+                            <img src="Ы" alt="Loaded image" loading="lazy" />
+                            <div class="skeleton"></div>
+                        </div>
+                        <h5 class="montserrat-alt-medium">The best aticles every week</h5>
+                        <p class="p3 montserrat-regular">Our insurance plans offers are priced the same everywhere else.</p> 
+                    </div>
+                    <div class="bk_up"></div>
+                    <div class="bk_down"></div> 
+                </article>
+            </section>
+            <section class="footer">
+                <main class="ft_top">
+                    <div class="ft_left">
+                        <img src="images/logo.svg" alt="" class="logo">
+                        <a href="https://2gis.kz/almaty/firm/9429940000802335" class="lf_addres montserrat-regular p4">23г, 10-й микрорайон, Алматы</a>
+                        <div class="social_media">
+                            <img src="images/social_media/instagram.svg" alt="">
+                            <img src="images/social_media/instagram.svg" alt="" >
+                            <img src="images/social_media/instagram.svg" alt="" >
+                        </div>  
+                    </div>
+                    <div class="ft_right">
+                    <p class="ft_text p1 montserrat-regular">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Aliquam elementum nisi ut ipsum elementum, ac lobortis purus mattis. 
+                    </p>
+                    <div class="links">
+                        <a href="" class="ft_addres p3 montserrat-bold">Школьная жизнь</a>
+                        <a href="" class="ft_addres p3 montserrat-bold">Родителям</a>
+                        <a href="" class="ft_addres p3 montserrat-bold">Поступление</a>
+                        <a href="" class="ft_addres p3 montserrat-bold">Контакты</a>
+                    </div>
+                    </div>
+                </main>
+            </section>
+            <section class="gymnasium_life">
+                <a><img src="images/gymnasium_life_logo 1.svg" alt=""></a>
+            </section>
+        </footer>
+
+        <script src="styles/utils/skeleton/skeleton.js"></script>
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+        <!-- <script>console.log("Lenis работает?", typeof Lenis);</script> -->
+        
+        <script src="styles/utils/scroll-bar/scroll.js" defer></script>
+        
+    </body>
+</html>

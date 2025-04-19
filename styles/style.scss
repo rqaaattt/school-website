@@ -112,10 +112,11 @@ header{
     
     #current-lang {
       font-size: f.rem(24);
-      width: f.rem(100);
+      width: f.rem(110);
       padding: f.rem(10) f.rem(20);
       background-color: transparent;
       border: none;
+      gap: f.rem(5);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -167,7 +168,7 @@ header{
         
         transition: linear 0.5s;
         padding: f.rem(10) f.rem(20);
-        width: f.rem(60);
+        width: f.rem(70);
         cursor: pointer;
         color: #fff;
         transition: background 0.2s ease;

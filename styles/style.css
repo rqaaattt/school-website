@@ -107,10 +107,11 @@ header .language-selector {
 }
 header .language-selector #current-lang {
   font-size: 1.5rem;
-  width: 6.25rem;
+  width: 6.875rem;
   padding: 0.625rem 1.25rem;
   background-color: transparent;
   border: none;
+  gap: 0.3125rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -152,7 +153,7 @@ header .language-selector .dropdown.show {
 header .language-selector .dropdown li {
   transition: linear 0.5s;
   padding: 0.625rem 1.25rem;
-  width: 3.75rem;
+  width: 4.375rem;
   cursor: pointer;
   color: #fff;
   transition: background 0.2s ease;

@@ -21,16 +21,16 @@ document.addEventListener('click', (e) => {
 // Скрытие текущего языка
 const currentFile = location.pathname;
 const langMap = {
-  'index-ru.html': 'Русский',
-  'index-kz.html': 'Қазақша',
-  'index-en.html': 'English'
+  'index-ru.html': 'RU <span class="material-symbols-outlined arrow">arrow_back_ios</span>',
+  'index-kz.html': 'KZ <span class="material-symbols-outlined arrow">arrow_back_ios</span>',
+  'index-en.html': 'EN <span class="material-symbols-outlined arrow">arrow_back_ios</span>'
 };
 const current = Object.entries(langMap).find(([file]) =>
   currentFile.includes(file)
 );
 if (current) {
   const [filename, label] = current;
-  currentLangBtn.textContent = label;
+  currentLangBtn.innerHTML = label;
   // Удаляем текущий язык из списка
   document.querySelectorAll('#lang-dropdown li').forEach((li) => {
     if (li.dataset.file === filename) {
