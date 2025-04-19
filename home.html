@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>GYMNASIUM#1</title>
         <!-- Подключить основные стили -->
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/utils/standarts/standarts.css">
@@ -97,18 +97,18 @@
                 <button class="montserrat-bold p4">Другое</button>
             </nav>
             <article class="photo">
-                <div class="image-container skeleton img edge">
+                <div class="skeleton-wrapper edge">
+                    <img src="" alt="" loading="lazy" />
                     <div class="skeleton"></div>
-                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
-                </div>
-                <div class="image-container skeleton img central">
+                  </div>
+                  <div class="skeleton-wrapper central">
+                    <img src="../images/test.png" alt="" loading="lazy" />
                     <div class="skeleton"></div>
-                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
-                </div> 
-                <div class="image-container skeleton img edge">
+                  </div>
+                <div class="skeleton-wrapper edge">
+                    <img src="../images/test.png" alt="" loading="lazy" />
                     <div class="skeleton"></div>
-                    <img src="enter_img.ATTENTION" alt="image" onload="this.parentElement.classList.remove('skeleton')">
-                </div> 
+                  </div>
             </article>
         </section>
         <section class="why_us scroll-anim">
@@ -180,8 +180,8 @@
         <section class="administration scroll-anim">
             <div class="montserrat-semibold intro_1">РЕКОМЕНДУЕМОЕ</div>
             <div class="text_box">
-                <h4 class="montserrat-alt-medium">«Администрация школы – </br>
-                    крепкий фундамент нашего успеха..»</h4>
+                <h3 class="montserrat-alt-medium"><span style="color: #1565D8">«Администрация школы – </span></br>
+                    крепкий фундамент нашего успеха..»</h3>
                 <div class="more-info">
                    <button class="montserrat-bold p3">Подробнее</button>
                    <span class="material-symbols-outlined">arrow_forward</span>
@@ -489,7 +489,9 @@
         </section>
 
         <footer class="scroll-anim">
-            <div class="wave"></div>
+            <div class="wave">
+                <img src="images/structures/Wave.svg" alt="">
+            </div>
             <section class="wh">
                 <article class="wh_left">
                     <h2 class="montserrat-alt-medium">Один клик – и мы на</br> связи в WhatsApp!</h2>
@@ -537,7 +539,8 @@
                 <a><img src="images/gymnasium_life_logo 1.svg" alt=""></a>
             </section>
         </footer>
-        
+
+        <script src="styles/utils/skeleton/skeleton.js"></script>
         <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
         <!-- <script>console.log("Lenis работает?", typeof Lenis);</script> -->
         

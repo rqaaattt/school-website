@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
   const lenis = new Lenis({
-    duration: 0.5,  // Скорость
+    duration: 0.25,  // Скорость
     easing: (t) => t * (2 - t),  // Инерция
     smooth: true
   });

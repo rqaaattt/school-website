@@ -32,6 +32,7 @@ header .header_img {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.625rem;
 }
 header .header_img .element {
   position: relative;
@@ -218,10 +219,9 @@ header.scrolled {
 .heading .photo .central {
   height: 50rem;
 }
-.heading .photo div {
+.heading .photo .skeleton-wrapper {
   flex: 1;
-  background-color: #D9D9D9;
-  border-radius: 0.9375rem;
+  border-radius: 1rem;
 }
 
 .why_us {
@@ -364,10 +364,10 @@ header.scrolled {
 .administration {
   margin: auto;
   margin-top: 6.25rem;
-  width: 90vw;
+  width: 75vw;
 }
 .administration .text_box {
-  width: 80vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -377,11 +377,10 @@ header.scrolled {
 }
 .administration .photo {
   margin-top: 6.25rem;
-  width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1.25rem;
 }
 .administration .photo .person {
   display: flex;
@@ -394,6 +393,8 @@ header.scrolled {
   margin-top: 1.25rem;
 }
 .administration .photo .button-left-arrow, .administration .photo .button-right-arrow {
+  width: 3.125rem;
+  height: 3.125rem;
   position: relative;
   bottom: 2.1875rem;
 }
@@ -645,13 +646,13 @@ header.scrolled {
   margin-top: 3.125rem;
 }
 .feedback .box {
-  width: 34.375rem;
+  flex: 1;
   padding: 3.125rem;
   border-radius: 1rem;
   background-color: #F9FBFE;
 }
-.feedback .box h4 {
-  width: 25.625rem;
+.feedback .box h5 {
+  width: 75%;
 }
 .feedback .box .special {
   margin-top: 1.25rem;
@@ -680,8 +681,11 @@ footer {
 }
 footer .wave {
   width: 100%;
-  height: 225px;
-  background: center no-repeat url("../images/structures/Wave.svg");
+}
+footer .wave img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 footer .wh {
   display: flex;
@@ -689,7 +693,7 @@ footer .wh {
   align-items: center;
   margin: auto;
   padding: 0 9.375rem;
-  margin-top: -0.0625rem;
+  margin-top: -0.3125rem;
   background-color: #0D2436;
 }
 footer .wh button {

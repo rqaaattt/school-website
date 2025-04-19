@@ -4,7 +4,6 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 body{
   display: flex;
@@ -32,6 +31,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: f.rem(10);
     .element {
       position: relative;
       display: inline-block;
@@ -218,10 +218,9 @@ header.scrolled {
     .central{
       height: f.rem(800);
     }
-    div{
+    .skeleton-wrapper{
       flex: 1;
-      background-color: #D9D9D9;
-      border-radius: f.rem(15);
+      border-radius: f.rem(16);
     }
   }
 }
@@ -363,9 +362,9 @@ header.scrolled {
 .administration{
   margin: auto;
   margin-top: f.rem(100);
-  width: 90vw;
+  width: 75vw;
   .text_box{
-    width: 80vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -375,11 +374,11 @@ header.scrolled {
   }
   .photo{
     margin-top: f.rem(100);
-    width: 90vw;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: f.rem(40);
+    gap: f.rem(20);
     .person{
       display: flex;
       flex-direction: column;
@@ -391,6 +390,8 @@ header.scrolled {
       }
     }
     .button-left-arrow, .button-right-arrow{
+      width: f.rem(50);
+      height: f.rem(50);
       position: relative;
       bottom: f.rem(35);
     }
@@ -652,12 +653,12 @@ header.scrolled {
     margin-top: f.rem(50)
   }
   .box{
-    width: f.rem(550);
+    flex: 1;
     padding: f.rem(50);
     border-radius: f.rem(16);
     background-color: #F9FBFE;
-    h4{
-      width: f.rem(410);
+    h5{
+      width: 75%;
     }
     .special{
       margin-top: f.rem(20);
@@ -689,8 +690,14 @@ footer{
   margin-top: f.rem(100);
   .wave{
     width: 100%;
-    height: 225px;
-    background: center no-repeat url("../images/structures/Wave.svg");
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    
+    
   }
   .wh{
     display: flex;
@@ -698,7 +705,7 @@ footer{
     align-items: center;
     margin: auto;
     padding: 0 f.rem(150);
-    margin-top: f.rem(-1);
+    margin-top: f.rem(-5);
     background-color: #0D2436;
     button{
       cursor: pointer;
