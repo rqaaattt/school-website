@@ -104,6 +104,85 @@ header{
     color: rgb(23, 109, 196);
     font-weight: 700;
   }
+  .language-selector {
+    position: relative;
+    font-weight: 600;
+    font-size: f.rem(24);
+    
+    
+    #current-lang {
+      font-size: f.rem(24);
+      width: f.rem(100);
+      padding: f.rem(10) f.rem(20);
+      background-color: transparent;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.3s, box-shadow 0.3s;
+      transition: linear 0.5s;
+  
+      &:hover, &:active {
+        color: #fff;
+        background-color: #1565D8;
+      }
+  
+      .arrow {
+        font-size: f.rem(16);
+        font-weight: 600;
+        transition: transform 0.3s ease;
+      }
+      
+      &.open .arrow {
+        transform: rotate(-90deg);
+      }
+      
+    }
+    
+  
+    .dropdown {
+      margin-top: f.rem(-1);
+      position: absolute;
+      left: 0;
+      width: auto;
+      background-color: #1565D8;
+      list-style: none;
+      z-index: 100;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: 0.5s linear;
+      border-radius: 0 0 f.rem(16) f.rem(16);
+      
+  
+      &.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        
+      }
+  
+      li {
+        
+        transition: linear 0.5s;
+        padding: f.rem(10) f.rem(20);
+        width: f.rem(60);
+        cursor: pointer;
+        color: #fff;
+        transition: background 0.2s ease;
+  
+        &:hover {
+          background-color: #114999;
+        }
+      }
+    }
+  }
+  .open{
+    background-color:#1565D8 !important;
+    color: #fff;
+  }
+  
 }
 header.scrolled {
   background-color: rgba(255, 255, 255, 0.75);

@@ -100,6 +100,70 @@ header .D {
   color: rgb(23, 109, 196);
   font-weight: 700;
 }
+header .language-selector {
+  position: relative;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+header .language-selector #current-lang {
+  font-size: 1.5rem;
+  width: 6.25rem;
+  padding: 0.625rem 1.25rem;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  transition: linear 0.5s;
+}
+header .language-selector #current-lang:hover, header .language-selector #current-lang:active {
+  color: #fff;
+  background-color: #1565D8;
+}
+header .language-selector #current-lang .arrow {
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+header .language-selector #current-lang.open .arrow {
+  transform: rotate(-90deg);
+}
+header .language-selector .dropdown {
+  margin-top: -0.0625rem;
+  position: absolute;
+  left: 0;
+  width: auto;
+  background-color: #1565D8;
+  list-style: none;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: 0.5s linear;
+  border-radius: 0 0 1rem 1rem;
+}
+header .language-selector .dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+header .language-selector .dropdown li {
+  transition: linear 0.5s;
+  padding: 0.625rem 1.25rem;
+  width: 3.75rem;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+header .language-selector .dropdown li:hover {
+  background-color: #114999;
+}
+header .open {
+  background-color: #1565D8 !important;
+  color: #fff;
+}
 
 header.scrolled {
   background-color: rgba(255, 255, 255, 0.75);
