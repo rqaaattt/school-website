@@ -23,7 +23,12 @@
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     </head>
     <body>
-        <script type="module" src="utils/scroll-bar/header_scrolling.js"></script>
+        <div id="preloader">
+            <div class="spinner"></div>
+          </div>
+        <script src="javascript/preloader.js"></script>
+          
+        
         <header id="site-header">
             <div class="header_img">
                 <a><img src="images/logo.svg" alt=""></a>
@@ -552,6 +557,7 @@
             </section>
         </footer>
 
+        <script type="module" src="utils/scroll-bar/header_scrolling.js"></script>
         <script src="utils/skeleton/skeleton.js"></script>
         <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
         <!-- <script>console.log("Lenis работает?", typeof Lenis);</script> -->
