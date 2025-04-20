@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYMNASIUM#1</title>
+        <link rel="icon" type="image/png" href="../images/logo.svg" />
+        <!-- Подключить основные стили -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../utils/standarts/standarts.css">
+        <link rel="stylesheet" href="../utils/scroll-bar/scrollbar.css">
+        <link rel="stylesheet" href="../utils/skeleton/skeleton.css">
+        <!-- Подключить шрифт Montserrat -->
+        <link rel="stylesheet" href="../fonts/Montserrat-fonts.css">
+    
+        <!-- Подключить шрифт Montserrat Alternatives -->
+        <link rel="stylesheet" href="../fonts/Montserrat-Alternatives-fonts.css">
+
+        <!-- Подключить Google Icons -->
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"/>
+
+        <!-- Подключить Yandex Maps API -->
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+        <!-- Подключить swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <script src="../utils/preloader/preloader.js"></script>
+
+    <header id="site-header">
+        <div class="header_img">
+            <a href="../index.html"><img src="../images/logo.svg" alt=""></a>
+            <a href="../index.html"><h1 class="montserrat-bold element">GYMNA</br>SIUM#1</h1></a>
+        </div>
+        <nav> 
+            <a href="#" class="montserrat-semibold">О школе</a>
+            <a href="#" class="montserrat-semibold">Школьная жизнь</a>
+            <a href="#" class="montserrat-semibold">Родителям</a>
+            <a href="#" class="montserrat-semibold">Поступление</a>
+            <a href="#" class="montserrat-semibold">Контакты</a>
+            <a class="D montserrat-semibold" href="https://kuula.co/post/n1/collection/7bRxC">3D тур</a>
+            <div class="language-selector">
+                <button id="current-lang" aria-expanded="false" class="montserrat-semibold">
+                  RU
+                  <span class="material-symbols-outlined arrow">arrow_back_ios</span>
+                </button>
+                <ul id="lang-dropdown" class="dropdown hidden">
+                  <li data-lang="kz" data-file="index-kz.html" class="montserrat-semibold">KZ</li>
+                  <li data-lang="en" data-file="index-en.html" class="montserrat-semibold">EN</li>
+                </ul>
+            </div>
+            <script src="../javascript/language.js"></script>
+        </nav>
+    </header>
+    <div class="background scroll-anim">
+        <img src="images/back.svg" alt="">
+        <h1>Всё, что нужно знать <br>родителям: </h1>
+        <h3>важные правила и стандарты школы, рекомендации, советы и полезная информация.</h3>
+        <div class="input">   
+            <img src="images/search.svg" alt="">        
+            
+            <button>Искать</button>
+            <input type="text" placeholder="Искать тему">
+        </div>
+    </div>
+    <div class="scroll-anim">
+        <h3 class="text">Популярные:</h3>
+        <button class="menu">Питание</button>
+        <button class="menu">Правила и стандарты</button>
+        <button class="menu">Рекомендация</button>
+    </div>
+    <div class="blog scroll-anim">
+        <div class="column">
+        <article class="bong anim">
+            <img src="images/blog1.jpeg" alt="">
+            <p>Future of Work</p>
+            <h3>Majority of peole will work in jobs that don’t exist today.</h3>
+            <div class="container">
+                <img src="images/Avatar.svg" alt=""> 
+                <main class="ct_info"><h2>Johanna Murray</h2>
+                <aside>
+                    <img src="images/Icon2.svg" alt="">
+                    <h4>Verified writer</h4>
+                </aside>
+                </main>
+            </div>
+            <h5>02 May</h5>
+        </article>
+        <div class="ec_blog anim">
+            <img src="images/blog2.jpeg" alt="">
+            <p>Help Finding Information Online</p>
+            <h3>Majority of peole will work in jobs that don’t exist today.</h3>
+            <div class="container">
+                <img src="images/Avatar.svg" alt=""> 
+                <main class="ct_info"><h2>Eugene Rodriquez</h2>
+                <aside>
+                    <img src="images/Icon2.svg" alt="">
+                    <h4>Verified writer</h4>
+                </aside>
+                </main>
+            </div>
+            <h5>02 May</h5>
+        </div>
+        <div class="ec_blog anim">
+            <img src="images/blog3.jpeg" alt="">
+            <p>Choosing The Best Photo Printer</p>
+            <h3>Majority of peole will work in jobs that don’t exist today.</h3>
+            <div class="container">
+                <img src="images/Avatar.svg" alt=""> 
+                <main class="ct_info"><h2>Helen Hughes</h2>
+                <aside>
+                    <img src="images/Icon2.svg" alt="">
+                    <h4>Verified writer</h4>
+                </aside>
+                </main>
+            </div>
+            <h5>02 May</h5>
+        </div>
+        </div>
+        <div class="column">
+        <div class="ec_blog anim">
+            <img src="images/blog4.jpeg" alt="">
+            <p>Why Use External It Support</p>
+            <h3>Majority of peole will work in jobs that don’t exist today.</h3> <div class="container">
+                <img src="images/Avatar.svg" alt=""> 
+                <main class="ct_info"><h2>Bobby Stevens</h2>
+                <aside>
+                    <img src="images/Icon2.svg" alt="">
+                    <h4>Verified writer</h4>
+                </aside>
+                </main>
+            </div>
+            <h5>02 May</h5>
+        </div>
+        <div class="ec_blog anim">
+            <img src="images/blog5.jpeg" alt="">
+            <p>How Does An Lcd Screen Work</p>
+            <h3>Majority of peole will work in jobs that don’t exist today.</h3>
+            <div class="container">
+                <img src="images/Avatar.svg" alt=""> 
+                <main class="ct_info"><h2>Lettie Hale</h2>
+                <aside>
+                    <img src="images/Icon2.svg" alt="">
+                    <h4>Verified writer</h4>
+                </aside>
+                </main>
+            </div>
+            <h5>02 May</h5>
+        </div>
+        <article class="bong anim">
+            <img src="images/blog6.jpeg" alt="">
+            <p>A Discount Toner</p>
+            <h3>Majority of peole will work in jobs that don’t exist today.</h3>
+            <div class="container">
+                <img src="images/Avatar.svg" alt=""> 
+                <main class="ct_info"><h2>Anne Bryan</h2>
+                <aside>
+                    <img src="images/Icon2.svg" alt="">
+                    <h4>Verified writer</h4>
+                </aside>
+                </main>
+            </div>
+            <h5>02 May</h5>
+        </article>
+        </div>
+        <div class="column">
+        <article class="bong anim">
+            <img src="images/blog7.jpeg" alt="">
+            <p>Future of Learning</p>
+            <h3>Majority of peole will work in jobs that don’t exist today.</h3>
+            <div class="container">
+                <img src="images/Avatar.svg" alt=""> 
+                <main class="ct_info"><h2>Matthew Summers</h2>
+                <aside>
+                    <img src="images/Icon2.svg" alt="">
+                    <h4>Verified writer</h4>
+                </aside>
+                </main>
+            </div>
+            <h5>02 May</h5>
+        </article>
+        <div class="ec_blog anim">
+            <img src="images/blog8.jpeg" alt="">
+            <p>Headset No Longer Wired For Sound</p>
+            <h3>Majority of peole will work in jobs that don’t exist today.</h3>
+            <div class="container">
+                <img src="images/Avatar.svg" alt=""> 
+                <main class="ct_info"><h2>Jeffery Holmes</h2>
+                <aside>
+                    <img src="images/Icon2.svg" alt="">
+                    <h4>Verified writer</h4>
+                </aside>
+                </main>
+            </div>
+            <h5>02 May</h5>
+        </div>
+        <div class="ec_blog anim">
+            <img src="images/blog9.jpeg" alt="">
+            <p>Addiction When Gambling Become…</p>
+            <h3>Majority of peole will work in jobs that don’t exist today.</h3>
+            <div class="container">
+                <img src="images/Avatar.svg" alt=""> 
+                <main class="ct_info"><h2>Ivan Townsend</h2>
+                <aside>
+                    <img src="images/Icon2.svg" alt="">
+                    <h4>Verified writer</h4>
+                </aside>
+                </main>
+            </div>
+            <h5>02 May</h5>
+        </div>
+        </div>
+    </div>
+    <button class="button">
+            <span>Увидеть всё</span>
+    </button>
+    <footer class="scroll-anim">
+        <div class="wave">
+            <img src="../images/structures/Wave.svg" alt="">
+        </div>
+        <section class="wh">
+            <article class="wh_left">
+                <h2 class="montserrat-alt-medium">Один клик – и мы на</br> связи в WhatsApp!</h2>
+                <a href="https://wa.me/номер_телефона?text=Ваше%20сообщение" target="_blank"><button class="montserrat-semibold" >Перейти в WhatsApp<span class="material-symbols-outlined">send</span></button></a>
+                <p class="montserrat-regular">Рекомендуется писать с 8:00-20:00, для получения быстрого ответа.</p>
+            </article>
+            <article class="wh_card">
+                <a href=""><div class="box">
+                    <div class="skeleton-wrapper">
+                        <img src="Ы" alt="Loaded image" loading="lazy" />
+                        <div class="skeleton"></div>
+                    </div>
+                    <h5 class="montserrat-alt-medium">The best aticles every week</h5>
+                    <p class="p3 montserrat-regular">Our insurance plans offers are priced the same everywhere else.</p> 
+                </div></a>
+                <div class="bk_up"></div>
+                <div class="bk_down"></div> 
+            </article>
+        </section>
+        <section class="footer">
+            <main class="ft_top">
+                <div class="ft_left">
+                    <img src="../images/logo.svg" alt="" class="logo">
+                    <a href="https://2gis.kz/almaty/firm/9429940000802335" class="lf_addres montserrat-regular p4">23г, 10-й микрорайон, Алматы</a>
+                    <div class="social_media">
+                        <img src="images/social_media/instagram.svg" alt="">
+                        <img src="images/social_media/instagram.svg" alt="" >
+                        <img src="images/social_media/instagram.svg" alt="" >
+                    </div>  
+                </div>
+                <div class="ft_right">
+                <p class="ft_text p1 montserrat-regular">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at feugiat metus. Nam viverra lectus sed scelerisque ultricies. Aliquam elementum nisi ut ipsum elementum, ac lobortis purus mattis. 
+                </p>
+                <div class="links">
+                    <a href="" class="ft_addres p3 montserrat-bold">Школьная жизнь</a>
+                    <a href="" class="ft_addres p3 montserrat-bold">Родителям</a>
+                    <a href="" class="ft_addres p3 montserrat-bold">Поступление</a>
+                    <a href="" class="ft_addres p3 montserrat-bold">Контакты</a>
+                </div>
+                </div>
+            </main>
+        </section>
+        <section class="gymnasium_life">
+            <a><img src="../images/gymnasium_life_logo 1.svg" alt=""></a>
+        </section>
+    </footer>
+
+
+
+<script type="module" src="../as"></script>
+<script src="../utils/skeleton/skeleton.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<!-- <script>console.log("Lenis работает?", typeof Lenis);</script> -->
+<script src="../utils/scroll-bar/header_scrolling.js"></script>
+<script src="../utils/scroll-bar/scroll.js" defer></script>
+</body>
+</html>
