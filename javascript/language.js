@@ -21,7 +21,7 @@ document.addEventListener('click', (e) => {
 // Скрытие текущего языка
 const currentFile = location.pathname;
 const langMap = {
-  'index-ru.html': 'RU <span class="material-symbols-outlined arrow">arrow_back_ios</span>',
+  'index.html': 'RU <span class="material-symbols-outlined arrow">arrow_back_ios</span>',
   'index-kz.html': 'KZ <span class="material-symbols-outlined arrow">arrow_back_ios</span>',
   'index-en.html': 'EN <span class="material-symbols-outlined arrow">arrow_back_ios</span>'
 };
