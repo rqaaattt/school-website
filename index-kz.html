@@ -7,9 +7,9 @@
         <link rel="icon" type="image/png" href="images/logo.svg" />
         <!-- Подключить основные стили -->
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/utils/standarts/standarts.css">
-        <link rel="stylesheet" href="styles/utils/scroll-bar/scrollbar.css">
-        <link rel="stylesheet" href="styles/utils/skeleton/skeleton.css">
+        <link rel="stylesheet" href="utils/standarts/standarts.css">
+        <link rel="stylesheet" href="utils/scroll-bar/scrollbar.css">
+        <link rel="stylesheet" href="utils/skeleton/skeleton.css">
         <!-- Подключить шрифт Montserrat -->
         <link rel="stylesheet" href="fonts/Montserrat-fonts.css">
     
@@ -21,9 +21,17 @@
 
         <!-- Подключить Yandex Maps API -->
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+        <!-- Подключить swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     </head>
     <body>
-        <script type="module" src="styles/utils/scroll-bar/header_scrolling.js"></script>
+        <div id="preloader">
+            <div class="spinner"></div>
+        </div>
+        <script src="utils/preloader/preloader.js"></script>
+
         <header id="site-header">
             <div class="header_img">
                 <a><img src="images/logo.svg" alt=""></a>
@@ -36,7 +44,7 @@
                 <a href="#" class="montserrat-semibold">Қабылдау</a>
                 <a href="#" class="montserrat-semibold">Байланыс</a>
                 <a class="D montserrat-semibold" href="https://kuula.co/post/n1/collection/7bRxC">3D тур</a>
-                <!-- <div class="language-selector">
+                <div class="language-selector">
                     <button id="current-lang" aria-expanded="false" class="montserrat-semibold">
                       KZ
                       <span class="material-symbols-outlined arrow">arrow_back_ios</span>
@@ -46,7 +54,7 @@
                       <li data-lang="en" data-file="index-en.html" class="montserrat-semibold">EN</li>
                     </ul>
                 </div>
-                <script src="javascript/language.js"></script> -->
+                <script src="javascript/language.js"></script>
             </nav>
         </header>
         <section class="target_of_school scroll-anim">
@@ -200,32 +208,57 @@
                 </div>
             </div>
             <div class="photo">
-                <div class="button-left-arrow">
-                    <button><span class="material-symbols-outlined">arrow_back</span></button>
-                </div>
-                <div class="person">
-                    <img src="images/structures/Polygon 16.png" alt="" srcset="">
-                    <h5 class="montserrat-alt-medium">Фамилия Имя Отчество</h5>
-                    <p class="montserrat-regular p4">Должность</p>
-                </div>
-                <div class="person">
-                    <img src="images/structures/Polygon 16.png" alt="" srcset="">
-                    <h5 class="montserrat-alt-medium">Фамилия Имя Отчество</h5>
-                    <p class="montserrat-regular p4">Должность</p>
-                </div>
-                <div class="person">
-                    <img src="images/structures/Polygon 16.png" alt="" srcset="">
-                    <h5 class="montserrat-alt-medium">Фамилия Имя Отчество</h5>
-                    <p class="montserrat-regular p4">Должность</p>
-                </div>
-                <div class="person">
-                    <img src="images/structures/Polygon 16.png" alt="" srcset="">
-                    <h5 class="montserrat-alt-medium">Фамилия Имя Отчество</h5>
-                    <p class="montserrat-regular p4">Должность</p>
-                </div>
-                <div class="button-right-arrow">
-                    <button><span class="material-symbols-outlined">arrow_forward</span></button>
-                </div>
+                <div class="swiper-button-prev"></div>
+                
+                <div class="swiper mySwiper">
+                    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide person">
+                            <img src="images/structures/Polygon 16.png" alt="" srcset="">
+                            <h5 class="montserrat-alt-medium">Билли</h5>
+                            <p class="montserrat-regular p4">Директор</p>
+                        </div>
+                        <div class="swiper-slide person">
+                            <img src="images/structures/Polygon 16.png" alt="" srcset="">
+                            <h5 class="montserrat-alt-medium">Кайрат Нуртас</h5>
+                            <p class="montserrat-regular p4">зам. Директора по воспитательной работе</p>
+                        </div>
+                        <div class="swiper-slide person">
+                            <img src="images/structures/Polygon 16.png" alt="" srcset="">
+                            <h5 class="montserrat-alt-medium">Джейсон Стэтхем</h5>
+                            <p class="montserrat-regular p4">лучший ученик школы</p>
+                        </div>
+                        <div class="swiper-slide person">
+                            <img src="images/structures/Polygon 16.png" alt="" srcset="">
+                            <h5 class="montserrat-alt-medium">Спанч Боб</h5>
+                            <p class="montserrat-regular p4">повар</p>
+                        </div>
+                        <div class="swiper-slide person">
+                            <img src="images/structures/Polygon 16.png" alt="" srcset="">
+                            <h5 class="montserrat-alt-medium">Адам Баранов</h5>
+                            <p class="montserrat-regular p4">Учитель по истории</p>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                  </div>
+                  <div class="swiper-button-next"></div>
+                
+                  <script>
+                    var swiper = new Swiper(".mySwiper", {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                      loop: true,
+                      navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                      },
+                      pagination: {
+                        el: ".swiper-pagination",
+                      },
+                      mousewheel: true,
+                      keyboard: true,
+                    });
+                  </script>
             </div>
         </section>
         <section class="additional_info">
@@ -468,35 +501,72 @@
                         думают о нас:</h4>
                 </div>
                 <div class="arrows">
-                    <button><span class="material-symbols-outlined standart">arrow_back</span></button>
-                    <button><span class="material-symbols-outlined">arrow_forward</span></button>
+                    <button><span class="material-symbols-outlined standart prev-but">arrow_back</span></button>
+                    <button><span class="material-symbols-outlined next-but">arrow_forward</span></button>
                 </div>
             </div>
             <div class="list">
-                <div class="box">
-                    <h5 class="montserrat-alt-medium">Great Services with Good Quality
-                        Photographers PhotoScape</h5>
-                    <p class="montserrat-regular p3 special">I truly have nothing but the highest praise and appreciation for all that you did for us. Saving me on the video montage projection was huge, and even more important the amazing pictures. </p>
-                    <div class="author">
-                        <img src="" alt="">
-                        <div class="text_box">
-                            <p class="p3 montserrat-bold">Pricillia Makalew</p>
-                            <p class="p4 montserrat-regular">EhyaScape Client</p>
+                <div class="swiper mySwiper2">  
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide box">
+                            <h5 class="montserrat-alt-medium">Great Services with Good Quality
+                                Photographers PhotoScape</h5>
+                            <p class="montserrat-regular p3 special">I truly have nothing but the highest praise and appreciation for all that you did for us. Saving me on the video montage projection was huge, and even more important the amazing pictures. </p>
+                            <div class="author">
+                                <img src="" alt="">
+                                <div class="text_box">
+                                    <p class="p3 montserrat-bold">Pricillia Makalew</p>
+                                    <p class="p4 montserrat-regular">EhyaScape Client</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box">
+                            <h5 class="montserrat-alt-medium">Great Services with Good Quality
+                                Photographers PhotoScape</h5>
+                            <p class="montserrat-regular p3 special">I truly have nothing but the highest praise and appreciation for all that you did for us. Saving me on the video montage projection was huge, and even more important the amazing pictures. </p>
+                            <div class="author">
+                                <img src="" alt="">
+                                <div class="text_box">
+                                    <p class="p3 montserrat-bold">Pricillia Makalew</p>
+                                    <p class="p4 montserrat-regular">EhyaScape Client</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box">
+                            <h5 class="montserrat-alt-medium">Great Services with Good Quality
+                                Photographers PhotoScape</h5>
+                            <p class="montserrat-regular p3 special">I truly have nothing but the highest praise and appreciation for all that you did for us. Saving me on the video montage projection was huge, and even more important the amazing pictures. </p>
+                            <div class="author">
+                                <img src="" alt="">
+                                <div class="text_box">
+                                    <p class="p3 montserrat-bold">Pricillia Makalew</p>
+                                    <p class="p4 montserrat-regular">EhyaScape Client</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box">
-                    <h5 class="montserrat-alt-medium">Great Services with Good Quality
-                        Photographers PhotoScape</h5>
-                    <p class="montserrat-regular p3 special">I truly have nothing but the highest praise and appreciation for all that you did for us. Saving me on the video montage projection was huge, and even more important the amazing pictures. </p>
-                    <div class="author">
-                        <img src="" alt="">
-                        <div class="text_box">
-                            <p class="p3 montserrat-bold">Pricillia Makalew</p>
-                            <p class="p4 montserrat-regular">EhyaScape Client</p>
-                        </div>
-                    </div>
-                </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                  </div>
+                  
+                
+                  <script>
+                    var swiper = new Swiper(".mySwiper2", {
+                      slidesPerView: 2,
+                      spaceBetween: 350,
+                      loop: true,
+                      navigation: {
+                        nextEl: ".next-but",
+                        prevEl: ".prev-but",
+                      },
+                      pagination: {
+                        el: ".swiper-pagination",
+                      },
+                      mousewheel: true,
+                      keyboard: true,
+                    });
+                  </script>
+            </div>
+                
             </div>    
         </section>
 
@@ -511,14 +581,14 @@
                     <p class="montserrat-regular">Рекомендуется писать с 8:00-20:00, для получения быстрого ответа.</p>
                 </article>
                 <article class="wh_card">
-                    <div class="box">
+                    <a href=""><div class="box">
                         <div class="skeleton-wrapper">
                             <img src="Ы" alt="Loaded image" loading="lazy" />
                             <div class="skeleton"></div>
                         </div>
                         <h5 class="montserrat-alt-medium">The best aticles every week</h5>
                         <p class="p3 montserrat-regular">Our insurance plans offers are priced the same everywhere else.</p> 
-                    </div>
+                    </div></a>
                     <div class="bk_up"></div>
                     <div class="bk_down"></div> 
                 </article>
@@ -552,11 +622,12 @@
             </section>
         </footer>
 
-        <script src="styles/utils/skeleton/skeleton.js"></script>
+        <script type="module" src="utils/scroll-bar/header_scrolling.js"></script>
+        <script src="utils/skeleton/skeleton.js"></script>
         <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
         <!-- <script>console.log("Lenis работает?", typeof Lenis);</script> -->
         
-        <script src="styles/utils/scroll-bar/scroll.js" defer></script>
+        <script src="utils/scroll-bar/scroll.js" defer></script>
         
     </body>
 </html>

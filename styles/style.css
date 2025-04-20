@@ -854,6 +854,9 @@ footer .wh_card {
   height: 37.5rem;
   position: relative;
 }
+footer .wh_card a {
+  cursor: pointer;
+}
 footer .wh_card .skeleton-wrapper {
   border-radius: 1rem;
 }
@@ -920,6 +923,7 @@ footer .footer .ft_top .ft_left .logo {
   height: 8.3125rem;
 }
 footer .footer .ft_top .ft_left a {
+  cursor: pointer;
   margin-top: 1.25rem;
   width: 14.8125rem;
   color: #5A7184;

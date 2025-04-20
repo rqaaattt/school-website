@@ -852,6 +852,9 @@ footer{
     margin-bottom: f.rem(150);
   }
   .wh_card{
+    a{
+      cursor: pointer;
+    }
     height: f.rem(600);
     position: relative;
     .skeleton-wrapper{
@@ -871,6 +874,7 @@ footer{
         width: 100%;
         height: f.rem(260);
       }
+      
       h5{
         margin-top: f.rem(20);
         padding: 0 f.rem(42);
@@ -920,6 +924,7 @@ footer{
           height: f.rem(133)
         }
         a{
+          cursor: pointer;
           margin-top: f.rem(20);
           width: f.rem(237);
           color: #5A7184;
