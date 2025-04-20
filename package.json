@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/rqaaattt/school-website#readme",
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.42"
+    "@studio-freight/lenis": "^1.0.42",
+    "swiper": "^11.2.6"
   }
 }

@@ -1,4 +1,38 @@
-*{
-    margin: 0;
-    padding: 0;
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  .slider-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+
+  .slide {
+    min-width: 300px; // фиксированная ширина одного слайда
+    flex-shrink: 0;
+    margin: 0 0.5rem;
+    padding: 1rem;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .slider-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: #000;
+    }
+  }
 }

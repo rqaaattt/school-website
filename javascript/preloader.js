@@ -1,7 +1,16 @@
+const swiper = new Swiper('.swiper', {
+  spaceBetween: 20,
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
 
-  window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
-    preloader.style.opacity = '0';
-    preloader.style.pointerEvents = 'none';
-    setTimeout(() => preloader.remove(), 500); // убираем из DOM
-  });
+// временно не работает

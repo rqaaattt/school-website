@@ -483,7 +483,6 @@ header.scrolled {
   }
   .photo{
     margin-top: f.rem(100);
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -505,6 +504,11 @@ header.scrolled {
       bottom: f.rem(35);
     }
   }
+  .swiper-button-next, .swiper-button-prev{
+    position: relative;
+    bottom: f.rem(20);
+  }
+
 }
 .additional_info{
   

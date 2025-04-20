@@ -518,6 +518,10 @@ header.scrolled {
   position: relative;
   bottom: 2.1875rem;
 }
+.administration .swiper-button-next, .administration .swiper-button-prev {
+  position: relative;
+  bottom: 1.25rem;
+}
 
 .additional_info {
   width: 75vw;
