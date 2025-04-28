@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GYMNASIUM#1</title>
+        <link rel="icon" type="image/png" href="images/logo.svg" />
+        <!-- Подключить основные стили -->
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="../utils/standarts/standarts.css">
+        <link rel="stylesheet" href="../utils/scroll-bar/scrollbar.css">
+        <link rel="stylesheet" href="../utils/skeleton/skeleton.css">
+        <!-- Подключить шрифт Montserrat -->
+        <link rel="stylesheet" href="../fonts/Montserrat-fonts.css">
+    
+        <!-- Подключить шрифт Montserrat Alternatives -->
+        <link rel="stylesheet" href="../fonts/Montserrat-Alternatives-fonts.css">
+
+        <!-- Подключить Google Icons -->
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"/>
+
+        <!-- Подключить Yandex Maps API -->
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+        <!-- Подключить swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    </head>
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <script src="../utils/preloader/preloader.js"></script>
+    <article class="first">
+        <header id="site-header">
+            <div class="header_img">
+                <a><img src="../images/logo.svg" alt=""></a>
+                <a><h1 class="montserrat-bold element">#1GYMNASIUM</h1></a>
+            </div>
+            <nav> 
+                <a href="#" class="montserrat-semibold">О школе</a>
+                <a href="#" class="montserrat-semibold active">Школьная жизнь</a>
+                <a href="page_for_parents/index.html" class="montserrat-semibold">Родителям</a>
+                <a href="#" class="montserrat-semibold">Поступление</a>
+                <a href="#" class="montserrat-semibold">Контакты</a>
+                <a class="D montserrat-semibold" href="https://kuula.co/post/n1/collection/7bRxC">3D тур</a>
+                <div class="language-selector">
+                    <button id="current-lang" aria-expanded="false" class="montserrat-semibold">
+                      RU
+                      <span class="material-symbols-outlined arrow">arrow_back_ios</span>
+                    </button>
+                    <ul id="lang-dropdown" class="dropdown hidden">
+                      <li data-lang="kz" data-file="index-kz.html" class="montserrat-semibold">KZ</li>
+                      <li data-lang="en" data-file="index-en.html" class="montserrat-semibold">EN</li>
+                    </ul>
+                </div>
+                <script src="../javascript/language.js"></script>
+            </nav>
+        </header>
+
+        <section class="info">
+            <h1 class="montserrat-alt-medium">#1gymnasium</h1>
+            <button>
+                <div class="montserrat-semibold">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="text" placeholder="Искать тему" class="montserrat-semibold">
+                </div>
+                <a href="">Искать</a>
+            </button>
+            <div class="popular">
+                <h5 class="montserrat-semibold">Популярные:</h5>
+                <p class="montserrat-semibold p3">Учёба</p>
+                <p class="montserrat-semibold p3">Мероприятия</p>
+                <p class="montserrat-semibold p3">Процветания</p>
+            </div>
+        </section>
+    </article>
+    
+    <script type="module" src="../utils/scroll-bar/header_scrolling.js"></script>
+    <script src="../utils/skeleton/skeleton.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <!-- <script>console.log("Lenis работает?", typeof Lenis);</script> -->
+        
+    <script src="../utils/scroll-bar/scroll.js" defer></script>
+</body>
+</html>
