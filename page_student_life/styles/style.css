@@ -357,6 +357,7 @@ body {
   justify-content: space-between;
 }
 .first .the-best-article .info .author .person {
+  gap: 1.25rem;
   display: flex;
 }
 .first .the-best-article .info .author .person p {

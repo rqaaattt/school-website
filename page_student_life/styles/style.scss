@@ -353,6 +353,7 @@ body {
         justify-content: space-between;
         
         .person{
+          gap: f.rem(20);
           display: flex;
           p{
             margin: 0;
