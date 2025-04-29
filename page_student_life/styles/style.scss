@@ -125,8 +125,12 @@ body {
         .D:hover {
           background-color: rgba(23, 109, 196, 1);
         }
+        .active:hover{
+          color: #fff;
+        }
       }
       .active{
+          
           color: #1565D8;
       }
       .D {

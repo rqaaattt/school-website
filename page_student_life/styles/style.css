@@ -148,6 +148,9 @@ body {
 .first header nav .D:hover {
   background-color: rgb(23, 109, 196);
 }
+.first header nav .active:hover {
+  color: #fff;
+}
 .first header .active {
   color: #1565D8;
 }
