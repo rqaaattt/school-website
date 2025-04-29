@@ -46,12 +46,6 @@
   animation: spin 1s linear infinite;
 }
 
-.first {
-  width: 100%;
-  height: 54.375rem;
-  background: url("../images/Background.png") center/cover no-repeat;
-}
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -71,11 +65,15 @@ body {
   font-weight: 400;
 }
 
-header {
+.first {
+  width: 100%;
+  height: 54.375rem;
+  background: url("../images/Background.png") center/cover no-repeat;
+}
+.first header {
   position: sticky;
   top: 0;
   z-index: 999;
-  margin: 1.25rem 0;
   padding: 0 5rem;
   display: flex;
   align-items: center;
@@ -85,21 +83,22 @@ header {
   transition: background-color 2s ease, backdrop-filter 1s ease;
   transition: background-color 2s ease, backdrop-filter 1s ease, -webkit-backdrop-filter 1s ease;
 }
-header .header_img {
+.first header .header_img a {
   padding: 1.25rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
+  text-decoration: none;
 }
-header .header_img .element {
+.first header .header_img .element {
   position: relative;
   display: inline-block;
   padding: 0.625rem 1.25rem;
   border-radius: 0.3125rem;
   overflow: hidden;
 }
-header .header_img .element::before {
+.first header .header_img .element::before {
   content: "";
   position: absolute;
   top: 0;
@@ -110,21 +109,21 @@ header .header_img .element::before {
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
 }
-header .header_img .element:hover::before {
+.first header .header_img .element:hover::before {
   transform: translateX(100%);
 }
-header .header_img h1 {
+.first header .header_img h1 {
   color: #fff;
   font-size: 1.5rem;
 }
-header .header_img img {
+.first header .header_img img {
   width: 6.25rem;
   height: 6.25rem;
 }
-header .header_img a {
+.first header .header_img a {
   cursor: pointer;
 }
-header nav {
+.first header nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +131,7 @@ header nav {
   font-weight: 600;
   cursor: pointer;
 }
-header nav a {
+.first header nav a {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -142,17 +141,17 @@ header nav a {
   display: flex;
   transition: linear 0.5s;
 }
-header nav a:hover {
+.first header nav a:hover {
   background-color: rgb(23, 109, 196);
   color: #fff;
 }
-header nav .D:hover {
+.first header nav .D:hover {
   background-color: rgb(23, 109, 196);
 }
-header .active {
+.first header .active {
   color: #1565D8;
 }
-header .D {
+.first header .D {
   margin: 0 1.25rem;
   border: 0.25rem rgb(23, 109, 196) solid;
   border-radius: 0.5rem;
@@ -161,12 +160,12 @@ header .D {
   color: #fff;
   font-weight: 700;
 }
-header .language-selector {
+.first header .language-selector {
   position: relative;
   font-weight: 600;
   font-size: 1.5rem;
 }
-header .language-selector #current-lang {
+.first header .language-selector #current-lang {
   font-size: 1.5rem;
   width: 6.875rem;
   padding: 0.625rem 1.25rem;
@@ -181,19 +180,23 @@ header .language-selector #current-lang {
   transition: linear 0.5s;
   color: #fff;
 }
-header .language-selector #current-lang:hover, header .language-selector #current-lang:active {
-  color: #fff;
+.first header .language-selector #current-lang:hover, .first header .language-selector #current-lang:active {
+  color: #fff !important;
   background-color: #1565D8;
 }
-header .language-selector #current-lang .arrow {
+.first header .language-selector #current-lang .arrow {
   font-size: 1rem;
   font-weight: 600;
   transition: transform 0.3s ease;
 }
-header .language-selector #current-lang.open .arrow {
+.first header .language-selector #current-lang.open p {
+  color: #fff !important;
+}
+.first header .language-selector #current-lang.open .arrow {
+  color: #fff !important;
   transform: rotate(-90deg);
 }
-header .language-selector .dropdown {
+.first header .language-selector .dropdown {
   margin-top: -0.0625rem;
   position: absolute;
   left: 0;
@@ -207,12 +210,12 @@ header .language-selector .dropdown {
   transition: 0.5s linear;
   border-radius: 0 0 1rem 1rem;
 }
-header .language-selector .dropdown.show {
+.first header .language-selector .dropdown.show {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
-header .language-selector .dropdown li {
+.first header .language-selector .dropdown li {
   transition: linear 0.5s;
   padding: 0.625rem 1.25rem;
   width: 4.375rem;
@@ -220,28 +223,33 @@ header .language-selector .dropdown li {
   color: #fff;
   transition: background 0.2s ease;
 }
-header .language-selector .dropdown li:hover {
+.first header .language-selector .dropdown li:hover {
   background-color: #114999;
 }
-header .open {
+.first header .open {
   background-color: #1565D8 !important;
   color: #fff;
 }
-
-header.scrolled {
+.first header.scrolled {
   background-color: rgba(255, 255, 255, 0.75);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-header.scrolled a {
+.first header.scrolled a {
   color: #183B56;
 }
-header.scrolled .language-selector a {
+.first header.scrolled h1 {
+  transition: linear 0.5s;
   color: #183B56;
 }
-
-.info {
+.first header.scrolled .language-selector #current-lang {
+  color: #183B56;
+}
+.first header.scrolled .active {
+  color: #1565D8;
+}
+.first .heading {
   margin-top: 12.5rem;
   position: absolute;
   left: 50%;
@@ -251,13 +259,13 @@ header.scrolled .language-selector a {
   justify-content: center;
   flex-direction: column;
 }
-.info h1 {
+.first .heading h1 {
   font-size: 8.4375rem;
   width: 100%;
   color: #fff;
   text-align: center;
 }
-.info button {
+.first .heading button {
   margin-top: 3.125rem;
   cursor: pointer;
   width: 100%;
@@ -272,16 +280,16 @@ header.scrolled .language-selector a {
   font-size: 1.25rem;
   padding: 0 1.875rem;
 }
-.info button span {
+.first .heading button span {
   font-weight: 600;
 }
-.info button div {
+.first .heading button div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
 }
-.info button a {
+.first .heading button a {
   width: 7.8125rem;
   height: 2.5rem;
   background-color: #1565D8;
@@ -293,7 +301,7 @@ header.scrolled .language-selector a {
   text-decoration: none;
   border-radius: 0.5rem;
 }
-.info button input {
+.first .heading button input {
   width: 46.875rem;
   height: 100%;
   border: none;
@@ -302,13 +310,13 @@ header.scrolled .language-selector a {
   outline: none;
   font-size: 1.25rem;
 }
-.info .popular {
+.first .heading .popular {
   margin-top: 1.5625rem;
   display: flex;
   gap: 0.625rem;
   color: #fff;
 }
-.info .popular p {
+.first .heading .popular p {
   cursor: pointer;
   text-align: center;
   width: 9.375rem;
@@ -318,7 +326,57 @@ header.scrolled .language-selector a {
   color: #fff;
   transition: linear 0.5s;
 }
-.info .popular p:hover {
+.first .heading .popular p:hover {
   background-color: #fff;
   color: #1565D8;
+}
+.first .the-best-article {
+  box-shadow: 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 37.5rem;
+  width: 81.875rem;
+  height: 28.125rem;
+  background-color: #fff;
+  display: flex;
+}
+.first .the-best-article h3 {
+  margin-top: 1.25rem;
+}
+.first .the-best-article p {
+  margin-top: 1.25rem;
+}
+.first .the-best-article .info {
+  padding: 2.1875rem;
+}
+.first .the-best-article .info .author {
+  margin-top: 3.125rem;
+  display: flex;
+  justify-content: space-between;
+}
+.first .the-best-article .info .author .person {
+  display: flex;
+}
+.first .the-best-article .info .author .person p {
+  margin: 0;
+}
+.first .the-best-article .info .author .person img {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.first .the-best-article .info .author .person .text div {
+  display: flex;
+  gap: 0.625rem;
+}
+.first .the-best-article .info .author .person .text div img {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.first .the-best-article .info .author .person .text div p {
+  margin: 0;
+}
+.first .the-best-article .info .author .data {
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
