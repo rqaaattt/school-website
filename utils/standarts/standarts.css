@@ -20,6 +20,16 @@
   font-size: 0.875rem;
 }
 
+.intro_3 {
+  display: inline-block;
+  background-color: #f3f3f3;
+  border-radius: 6.25rem;
+  text-align: center;
+  padding: 0.3125rem 0.9375rem;
+  color: #36B37E;
+  font-size: 1.75rem;
+}
+
 h1 {
   font-size: 4.75rem;
 }
@@ -111,4 +121,35 @@ h5 {
 
 .center_align {
   text-align: center;
+}
+
+.author {
+  margin-top: 3.125rem;
+  display: flex;
+  justify-content: space-between;
+}
+.author .person {
+  gap: 1.25rem;
+  display: flex;
+}
+.author .person p {
+  margin: 0;
+}
+.author .person img {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.author .person .text div {
+  display: flex;
+  gap: 0.625rem;
+}
+.author .person .text div img {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.author .person .text div p {
+  margin: 0;
+}
+.author .data {
+  text-align: right;
 }/*# sourceMappingURL=standarts.css.map */

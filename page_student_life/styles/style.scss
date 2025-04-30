@@ -45,6 +45,7 @@ body {
     width: 100%;
     height: f.rem(870);
     background: url('../images/Background.png') center/cover no-repeat;
+    margin-bottom: f.rem(300);
     header{
       position: sticky;
       top: 0;
@@ -355,43 +356,51 @@ body {
     }
     .info{
       padding: f.rem(35);
-      .author{
-        margin-top: f.rem(50);
-        display: flex;
-        justify-content: space-between;
-        
-        .person{
-          gap: f.rem(20);
-          display: flex;
-          p{
-            margin: 0;
-          }
-          img{
-            width: f.rem(50);
-            height: f.rem(50);
-          }
-          .text{
-            div{
-              display: flex;
-              gap: f.rem(10);
-              img{
-                width: f.rem(18);
-                height: f.rem(18);
-              }
-              p{
-                margin: 0;
-              }
-            }
-          }
-          
-        }
-        .data{
-          text-align: right;
-        }
-      }
+      
       
       
     }
   }
 }
-
+.recommend{
+  
+  padding: 0 f.rem(150);
+  display: flex;
+  flex-direction: column;
+  a{
+    text-decoration: none;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    h4{
+      color:#959EAD;
+    }
+    margin-bottom: f.rem(50);
+  }
+  .content{
+    display: flex;
+    gap: f.rem(50);
+  }
+  .content1{
+    border-radius: f.rem(16);
+    background: url('../images/Item.png') center/cover no-repeat;
+    flex: 1;
+    padding: f.rem(40) f.rem(70);
+    .intro_3{
+      margin-bottom: f.rem(200)
+    }
+    h2{
+      color: #fff;
+    }
+    .author{
+      .person{
+        .text{
+          h5{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

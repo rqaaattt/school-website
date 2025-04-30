@@ -69,6 +69,7 @@ body {
   width: 100%;
   height: 54.375rem;
   background: url("../images/Background.png") center/cover no-repeat;
+  margin-bottom: 18.75rem;
 }
 .first header {
   position: sticky;
@@ -360,33 +361,39 @@ body {
 .first .the-best-article .info {
   padding: 2.1875rem;
 }
-.first .the-best-article .info .author {
-  margin-top: 3.125rem;
+
+.recommend {
+  padding: 0 9.375rem;
+  display: flex;
+  flex-direction: column;
+}
+.recommend a {
+  text-decoration: none;
+}
+.recommend .container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3.125rem;
 }
-.first .the-best-article .info .author .person {
-  gap: 1.25rem;
+.recommend .container h4 {
+  color: #959EAD;
+}
+.recommend .content {
   display: flex;
+  gap: 3.125rem;
 }
-.first .the-best-article .info .author .person p {
-  margin: 0;
+.recommend .content1 {
+  border-radius: 1rem;
+  background: url("../images/Item.png") center/cover no-repeat;
+  flex: 1;
+  padding: 2.5rem 4.375rem;
 }
-.first .the-best-article .info .author .person img {
-  width: 3.125rem;
-  height: 3.125rem;
+.recommend .content1 .intro_3 {
+  margin-bottom: 12.5rem;
 }
-.first .the-best-article .info .author .person .text div {
-  display: flex;
-  gap: 0.625rem;
+.recommend .content1 h2 {
+  color: #fff;
 }
-.first .the-best-article .info .author .person .text div img {
-  width: 1.125rem;
-  height: 1.125rem;
-}
-.first .the-best-article .info .author .person .text div p {
-  margin: 0;
-}
-.first .the-best-article .info .author .data {
-  text-align: right;
+.recommend .content1 .author .person .text h5 {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

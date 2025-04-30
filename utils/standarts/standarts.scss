@@ -24,6 +24,17 @@
   font-size: f.rem(14);
 }
 
+.intro_3 {
+  display: inline-block;
+  background-color: #f3f3f3;
+  border-radius: f.rem(100);
+
+  text-align: center;
+  padding: f.rem(5) f.rem(15);
+  color: #36B37E;
+  font-size: f.rem(28);
+}
+
 h1 {
   font-size: f.rem(76);
 }
@@ -108,4 +119,39 @@ h5 {
 }
 .center_align{
   text-align: center;
+}
+
+.author{
+  margin-top: f.rem(50);
+  display: flex;
+  justify-content: space-between;
+  
+  .person{
+    gap: f.rem(20);
+    display: flex;
+    p{
+      margin: 0;
+    }
+    img{
+      width: f.rem(50);
+      height: f.rem(50);
+    }
+    .text{
+      div{
+        display: flex;
+        gap: f.rem(10);
+        img{
+          width: f.rem(18);
+          height: f.rem(18);
+        }
+        p{
+          margin: 0;
+        }
+      }
+    }
+    
+  }
+  .data{
+    text-align: right;
+  }
 }
