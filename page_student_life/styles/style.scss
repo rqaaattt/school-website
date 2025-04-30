@@ -146,8 +146,6 @@ body {
         position: relative;
         font-weight: 600;
         font-size: f.rem(24);
-        
-        
         #current-lang {
           font-size: f.rem(24);
           width: f.rem(110);
@@ -233,6 +231,12 @@ body {
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       a{
           color: #183B56;
+      }
+      .D{
+        color:#1565D8;
+      }
+      .D:hover{
+        color: #fff;
       }
       h1{
         transition: linear 0.5s;

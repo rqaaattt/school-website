@@ -242,6 +242,12 @@ body {
 .first header.scrolled a {
   color: #183B56;
 }
+.first header.scrolled .D {
+  color: #1565D8;
+}
+.first header.scrolled .D:hover {
+  color: #fff;
+}
 .first header.scrolled h1 {
   transition: linear 0.5s;
   color: #183B56;
