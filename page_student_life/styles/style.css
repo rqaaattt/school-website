@@ -437,4 +437,47 @@ body {
 }
 .news .content2 .author .person .text h5 {
   color: #fff;
+}
+
+.events {
+  margin-top: 6.25rem;
+  padding: 0 9.375rem;
+  display: flex;
+  flex-direction: column;
+}
+.events a {
+  text-decoration: none;
+}
+.events .container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.125rem;
+}
+.events .container h4 {
+  color: #959EAD;
+  width: 75%;
+}
+.events .article {
+  box-shadow: 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  height: 28.125rem;
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+}
+.events .article img {
+  border-radius: 1rem 0 0 1rem;
+  width: 125%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.events .article h3 {
+  margin-top: 1.25rem;
+}
+.events .article p {
+  margin-top: 1.25rem;
+}
+.events .article .info {
+  padding: 2.1875rem;
 }/*# sourceMappingURL=style.css.map */
