@@ -391,9 +391,50 @@ body {
 .recommend .content1 .intro_3 {
   margin-bottom: 12.5rem;
 }
-.recommend .content1 h2 {
+.recommend .content1 h2, .recommend .content1 h3, .recommend .content1 p {
   color: #fff;
 }
 .recommend .content1 .author .person .text h5 {
+  color: #fff;
+}
+
+.news {
+  margin-top: 6.25rem;
+  padding: 0 9.375rem;
+  display: flex;
+  flex-direction: column;
+}
+.news a {
+  text-decoration: none;
+}
+.news .container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.125rem;
+}
+.news .container h4 {
+  color: #959EAD;
+}
+.news .content {
+  display: flex;
+  gap: 3.125rem;
+}
+.news .content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 1rem;
+  background: url("../images/Item.png") center/cover no-repeat;
+  flex: 1;
+  height: 31.25rem;
+  padding: 2.5rem 4.375rem;
+}
+.news .content2 .intro_3 {
+  margin-bottom: 12.5rem;
+}
+.news .content2 h3, .news .content2 p {
+  color: #fff;
+}
+.news .content2 .author .person .text h5 {
   color: #fff;
 }/*# sourceMappingURL=style.css.map */
