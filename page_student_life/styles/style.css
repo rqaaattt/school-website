@@ -480,4 +480,67 @@ body {
 }
 .events .article .info {
   padding: 2.1875rem;
+}
+
+.interesting {
+  margin-top: 6.25rem;
+  padding: 0 9.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.interesting a {
+  text-decoration: none;
+}
+.interesting .more-info {
+  margin-top: 3.125rem;
+}
+.interesting .container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.125rem;
+}
+.interesting .container h4 {
+  color: #959EAD;
+}
+.interesting .content_a, .interesting .content_b {
+  display: flex;
+  gap: 3.125rem;
+}
+.interesting .content_b {
+  margin-top: 6.25rem;
+}
+.interesting .content1 {
+  border-radius: 1rem;
+  background: url("../images/Item.png") center/cover no-repeat;
+  flex: 1;
+  padding: 2.5rem 4.375rem;
+}
+.interesting .content1 .intro_3 {
+  margin-bottom: 12.5rem;
+}
+.interesting .content1 h2, .interesting .content1 h3, .interesting .content1 p {
+  color: #fff;
+}
+.interesting .content1 .author .person .text h5 {
+  color: #fff;
+}
+.interesting .content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 1rem;
+  background: url("../images/Item.png") center/cover no-repeat;
+  flex: 1;
+  height: 31.25rem;
+  padding: 2.5rem 4.375rem;
+}
+.interesting .content2 .intro_3 {
+  margin-bottom: 12.5rem;
+}
+.interesting .content2 h3, .interesting .content2 p {
+  color: #fff;
+}
+.interesting .content2 .author .person .text h5 {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

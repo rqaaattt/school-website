@@ -152,4 +152,181 @@ h5 {
 }
 .author .data {
   text-align: right;
+}
+
+footer {
+  margin-top: 6.25rem;
+}
+footer .wave {
+  width: 100%;
+}
+footer .wave img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+footer .wh {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  padding: 0 9.375rem;
+  margin-top: -0.3125rem;
+  background-color: #0D2436;
+}
+footer .wh button {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.875rem;
+  width: 32.5rem;
+  height: 3.75rem;
+  padding: 0 1.875rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  color: #959EAD;
+  font-size: 1.25rem;
+  transition: 0.2s linear;
+}
+footer .wh a {
+  text-decoration: none;
+}
+footer .wh button:hover {
+  color: #1565D8;
+  font-weight: 600;
+}
+footer .wh h2 {
+  color: #fff;
+}
+footer .wh p {
+  color: #fff;
+  width: 18.75rem;
+  margin-top: 0.625rem;
+}
+footer .wh_left {
+  margin-bottom: 9.375rem;
+}
+footer .wh_card {
+  height: 37.5rem;
+  position: relative;
+}
+footer .wh_card a {
+  cursor: pointer;
+}
+footer .wh_card .skeleton-wrapper {
+  border-radius: 1rem;
+}
+footer .wh_card .box {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 38.75rem;
+  height: 23.125rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 0.625rem;
+}
+footer .wh_card .box .image-container img {
+  width: 100%;
+  height: 16.25rem;
+}
+footer .wh_card .box h5 {
+  margin-top: 1.25rem;
+  padding: 0 2.625rem;
+  color: #000;
+}
+footer .wh_card .box p {
+  padding: 0 2.625rem;
+  color: #5A7184;
+}
+footer .wh_card .bk_up {
+  z-index: 1;
+  position: absolute;
+  background-color: #1565D8;
+  width: 20rem;
+  border-radius: 1rem;
+  height: 15.625rem;
+  right: -3.75rem;
+  top: 3.125rem;
+}
+footer .wh_card .bk_down {
+  z-index: 1;
+  position: absolute;
+  left: -6.25rem;
+  bottom: 9.375rem;
+  border-radius: 1rem;
+  background-color: #1c3142;
+  width: 20rem;
+  height: 15.625rem;
+}
+footer .footer {
+  margin-top: -0.0625rem;
+  background-color: #0D2436;
+  display: flex;
+}
+footer .footer .ft_top {
+  display: flex;
+  margin: auto;
+}
+footer .footer .ft_top .ft_left {
+  width: 20.3125rem;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer .ft_top .ft_left .logo {
+  width: 8.3125rem;
+  height: 8.3125rem;
+}
+footer .footer .ft_top .ft_left a {
+  cursor: pointer;
+  margin-top: 1.25rem;
+  width: 14.8125rem;
+  color: #5A7184;
+  float: left;
+  text-decoration: none;
+}
+footer .footer .ft_top .ft_left .social_media {
+  display: flex;
+  gap: 0.625rem;
+}
+footer .footer .ft_top .ft_left .social_media img {
+  margin-top: 1.25rem;
+}
+footer .footer .ft_top .ft_left .lf_image1 {
+  margin-left: -245px;
+}
+footer .footer .ft_top .ft_left .lf_image2 {
+  margin-left: -200px;
+}
+footer .footer .ft_top .ft_left .lf_image3 {
+  margin-left: -155px;
+}
+footer .footer .ft_top .ft_right {
+  width: 62.5rem;
+}
+footer .footer .ft_top .ft_right p {
+  width: 100%;
+  color: #5A7184;
+}
+footer .footer .ft_top .ft_right .links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.8125rem;
+}
+footer .footer .ft_top .ft_right .links a {
+  text-decoration: none;
+}
+footer .gymnasium_life {
+  margin-top: -0.0625rem;
+  padding: 4.6875rem;
+  background-color: #0D2436;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .gymnasium_life a {
+  cursor: pointer;
 }/*# sourceMappingURL=standarts.css.map */
