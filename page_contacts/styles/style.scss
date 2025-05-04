@@ -1,0 +1,29 @@
+@use "../../utils/function/_functions.scss" as f;
+@use '../..//utils/mixins/breakpoints' as *;
+@import '../../utils/preloader/preloader';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/Background.svg') center/cover no-repeat;
+    width: 100%;
+    height: f.rem(580);
+    h1{
+        font-size: f.rem(128)
+    }
+    h1, p{
+        color: #fff;
+    }
+    p{
+        margin-top: f.rem(25);
+        text-align: center;
+        width: 50%;
+    }
+}
