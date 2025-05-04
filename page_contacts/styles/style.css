@@ -48,4 +48,44 @@
   margin-top: 1.5625rem;
   text-align: center;
   width: 50%;
+}
+
+.social_media {
+  margin-top: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.social_media h1 {
+  font-size: 3.5rem;
+  color: #1565D8;
+}
+.social_media p {
+  text-align: center;
+  color: #183B56;
+  width: 40%;
+}
+.social_media .table {
+  margin-top: 3.125rem;
+  display: flex;
+  gap: 3.125rem;
+}
+.social_media .table .youtube {
+  padding: 0.9375rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: #EBF7F2;
+}
+.social_media .table .youtube p {
+  width: 100%;
+}
+.social_media .table .youtube i {
+  font-style: normal;
+  color: #1565D8;
 }/*# sourceMappingURL=style.css.map */

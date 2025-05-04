@@ -300,6 +300,25 @@ h5 {
   font-weight: 600;
 }
 
+.more-info-inv {
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.more-info-inv button, .more-info-inv span {
+  cursor: pointer;
+  background-color: transparent;
+  color: #0D2436;
+  border: none;
+}
+.more-info-inv span {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
 .left_align {
   text-align: left;
 }
@@ -518,4 +537,19 @@ footer .gymnasium_life {
 }
 footer .gymnasium_life a {
   cursor: pointer;
+}
+
+.location {
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 6.25rem;
+  width: 93.75rem;
+}
+.location div {
+  border-radius: 1rem;
+  width: 100%;
+  height: 34.375rem;
+}
+.location div ymaps {
+  border-radius: 2rem;
 }/*# sourceMappingURL=standarts.css.map */

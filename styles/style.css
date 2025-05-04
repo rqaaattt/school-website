@@ -82,22 +82,6 @@ section {
   gap: 6.25rem;
 }
 
-.location {
-  margin: auto;
-  margin-top: 6.25rem;
-  width: 75vw;
-}
-.location div {
-  border-radius: 1rem;
-  width: 100%;
-  height: 34.375rem;
-}
-.location #map {
-  border-radius: 1rem;
-  width: 100%;
-  height: 34.375rem;
-}
-
 .heading {
   margin: auto;
   margin-top: 6.25rem;

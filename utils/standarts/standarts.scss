@@ -316,6 +316,26 @@ h5 {
   }
 }
 
+.more-info-inv{
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: f.rem(10);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button, span{
+    cursor: pointer;
+    background-color: transparent;
+    color: #0D2436;
+    border: none;
+  }
+  span{
+    font-size: f.rem(16);
+    font-weight: 200;
+  }
+}
+
 .left_align{
   text-align: left;
 }
@@ -539,4 +559,19 @@ footer{
       cursor: pointer;
     }
   }
+}
+
+.location{
+  border-radius: f.rem(16);
+  margin: auto;
+  margin-top: f.rem(100);
+  width: f.rem(1500);
+  div{
+    border-radius: f.rem(16);
+    width: 100%;
+    height: f.rem(550);
+  ymaps{
+      border-radius: f.rem(32);
+  }
+}
 }

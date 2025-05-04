@@ -27,3 +27,43 @@
         width: 50%;
     }
 }
+
+.social_media{
+    margin-top: f.rem(100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    h1{
+        font-size: f.rem(56);
+        color: #1565D8;
+    }
+    p{
+        text-align: center;
+        color:#183B56;
+        width: 40%;
+    }
+    .table{
+        margin-top: f.rem(50);
+        display: flex;
+        gap: f.rem(50);
+        .youtube{
+            padding: f.rem(15);
+            width: f.rem(400);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: f.rem(16);
+            background-color: #EBF7F2;
+            p{
+                width: 100%;
+            }
+            i{
+                font-style: normal;
+                color:#1565D8;
+            }
+        }
+    }
+}
