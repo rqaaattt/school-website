@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #preloader {
   position: fixed;
   top: 0;
@@ -24,68 +25,143 @@
     transform: rotate(360deg);
   }
 }
+/* Для телефонов */
+@media (max-width: 767px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/Background.svg") center/cover no-repeat;
+    width: 100%;
+    height: 36.25rem;
+  }
+  .heading h1 {
+    font-size: 1rem;
+  }
+  .heading h1, .heading p {
+    color: #fff;
+  }
+  .heading p {
+    margin-top: 0.5rem;
+    text-align: center;
+    width: 50%;
+  }
+  .social_media {
+    margin-top: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .social_media h1 {
+    font-size: 3.5rem;
+    color: #1565D8;
+  }
+  .social_media p {
+    text-align: center;
+    color: #183B56;
+    width: 40%;
+  }
+  .social_media .table {
+    margin-top: 3.125rem;
+    display: flex;
+    gap: 3.125rem;
+  }
+  .social_media .table .youtube {
+    padding: 0.9375rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: #EBF7F2;
+  }
+  .social_media .table .youtube p {
+    width: 100%;
+  }
+  .social_media .table .youtube i {
+    font-style: normal;
+    color: #1565D8;
+  }
+}
+/* Для планшетов */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Стили для планшетов */
+}
+/* Для ноутбуков */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* Стили для ноутбуков */
+}
+/* Для экранов от 1440px до 1920px */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  /* Стили для экранов от 1440px до 1920px */
+}
+/* Для мониторов с разрешением 1920px и выше */
+@media (min-width: 1920px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/Background.svg") center/cover no-repeat;
+    width: 100%;
+    height: 36.25rem;
+  }
+  .heading h1 {
+    font-size: 8rem;
+  }
+  .heading h1, .heading p {
+    color: #fff;
+  }
+  .heading p {
+    margin-top: 1.5625rem;
+    text-align: center;
+    width: 50%;
+  }
+  .social_media {
+    margin-top: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .social_media h1 {
+    font-size: 3.5rem;
+    color: #1565D8;
+  }
+  .social_media p {
+    text-align: center;
+    color: #183B56;
+    width: 40%;
+  }
+  .social_media .table {
+    margin-top: 3.125rem;
+    display: flex;
+    gap: 3.125rem;
+  }
+  .social_media .table .youtube {
+    padding: 0.9375rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: #EBF7F2;
+  }
+  .social_media .table .youtube p {
+    width: 100%;
+  }
+  .social_media .table .youtube i {
+    font-style: normal;
+    color: #1565D8;
+  }
+}
 * {
   margin: 0;
   padding: 0;
-}
-
-.heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: url("../images/Background.svg") center/cover no-repeat;
-  width: 100%;
-  height: 36.25rem;
-}
-.heading h1 {
-  font-size: 8rem;
-}
-.heading h1, .heading p {
-  color: #fff;
-}
-.heading p {
-  margin-top: 1.5625rem;
-  text-align: center;
-  width: 50%;
-}
-
-.social_media {
-  margin-top: 6.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.social_media h1 {
-  font-size: 3.5rem;
-  color: #1565D8;
-}
-.social_media p {
-  text-align: center;
-  color: #183B56;
-  width: 40%;
-}
-.social_media .table {
-  margin-top: 3.125rem;
-  display: flex;
-  gap: 3.125rem;
-}
-.social_media .table .youtube {
-  padding: 0.9375rem;
-  width: 25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1rem;
-  background-color: #EBF7F2;
-}
-.social_media .table .youtube p {
-  width: 100%;
-}
-.social_media .table .youtube i {
-  font-style: normal;
-  color: #1565D8;
 }/*# sourceMappingURL=style.css.map */
