@@ -576,9 +576,9 @@
   }
 }
 /* Для планшетов */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Стили для планшетов */
-}
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   /* Стили для планшетов */
+// }
 
 /* Для ноутбуков */
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -586,9 +586,9 @@
 }
 
 /* Для экранов от 1440px до 1920px */
-@media (min-width: 1440px) and (max-width: 1919px) {
-  /* Стили для экранов от 1440px до 1920px */
-}
+// @media (min-width: 1440px) and (max-width: 1919px) {
+//   /* Стили для экранов от 1440px до 1920px */
+// }
 
 /* Для мониторов с разрешением 1920px и выше */
 @media (min-width: 1920px) {
