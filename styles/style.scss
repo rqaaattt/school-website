@@ -225,7 +225,7 @@ section{
   margin: auto;
   margin-top: f.rem(100);
   width: 100%;
-  height: f.rem(200);
+  height: f.rem(200); //400
   background-color: #F9FBFE;
   border-radius: f.rem(20);
   position: relative;
@@ -238,21 +238,21 @@ section{
   h4, p{
     width: auto;
   }
-  img{
+  img{ //!
     width: 30%;
     position: absolute;
     right: 5%;
     bottom: 40%;
   }
   h4{
-    width: f.rem(215);
+    width: f.rem(215); //
     margin-left: f.rem(50);
     color: #183B56;
   }
   p{
-    width: f.rem(200);
+    width: f.rem(200); //
     margin-top: f.rem(10);
-    margin-left: f.rem(70);
+    margin-left: f.rem(50);
   }
 }
 .administration{
