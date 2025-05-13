@@ -19,37 +19,37 @@ section{
 }
 
 
-.target_of_school {
-  position: relative;
-  bottom: f.rem(125);
-  .part1{
-    position: relative;
-    span {
-      font-size: f.rem(150);
-    }
-    #logo_text {
-      position: absolute;
-      bottom: 45%;
-      right: 8%;
-      overflow-x: hidden;
-    }
-    .gradient-text {
-      background: linear-gradient(to right, #ffffff, #ffffff, #0086EF);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-  .text_box{
-    position: absolute;
-    bottom: f.rem(-50);
-    margin-left: 60vw;
-    p{
-      margin-left: f.rem(50)
-    }
-  }
-}
+// .target_of_school {
+//   position: relative;
+//   bottom: f.rem(125);
+//   .part1{
+//     position: relative;
+//     span {
+//       font-size: f.rem(150);
+//     }
+//     #logo_text {
+//       position: absolute;
+//       bottom: 45%;
+//       right: 8%;
+//       overflow-x: hidden;
+//     }
+//     .gradient-text {
+//       background: linear-gradient(to right, #ffffff, #ffffff, #0086EF);
+//       background-clip: text;
+//       -webkit-background-clip: text;
+//       color: transparent;
+//       -webkit-text-fill-color: transparent;
+//     }
+//   }
+//   .text_box{
+//     position: absolute;
+//     bottom: f.rem(-50);
+//     margin-left: 60vw;
+//     p{
+//       margin-left: f.rem(50)
+//     }
+//   }
+// }
 
 .history_of_school{
   width: 75vw;
@@ -179,7 +179,7 @@ section{
   }
 }
 .call_us{
-  margin-top: f.rem(100);
+  margin-top: f.rem(50);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -189,13 +189,12 @@ section{
   background-size: cover;
   padding: f.rem(90) 0;
   h2, p, button{
+    
     color: #fff;
     text-align: center;
   }
-  h2{
-    line-height: f.rem(48);
-  }
   p{
+    width: 70%;
     margin-top: f.rem(10);
   }
   button{
@@ -224,9 +223,9 @@ section{
 }
 .quote{
   margin: auto;
-  margin-top: f.rem(200);
-  width: f.rem(1200);
-  height: f.rem(400);
+  margin-top: f.rem(100);
+  width: 100%;
+  height: f.rem(200);
   background-color: #F9FBFE;
   border-radius: f.rem(20);
   position: relative;
@@ -234,23 +233,26 @@ section{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: url('/images/quote/Group\ 1171275066.svg') no-repeat center;
+  background: url('/images/quote/Group\ 1171275066.svg') no-repeat ;
   background-size: cover;
   h4, p{
     width: auto;
   }
   img{
+    width: 30%;
     position: absolute;
     right: 5%;
-    bottom: 30%;
+    bottom: 40%;
   }
   h4{
-    margin-left: f.rem(100);
+    width: f.rem(215);
+    margin-left: f.rem(50);
     color: #183B56;
   }
   p{
+    width: f.rem(400);
     margin-top: f.rem(10);
-    margin-left: f.rem(150);
+    margin-left: f.rem(50);
   }
 }
 .administration{

@@ -50,7 +50,6 @@
       gap: f.rem(10);
       .element {
         position: relative;
-        display: inline-block;
         padding: f.rem(10) f.rem(20);
         border-radius: f.rem(5);
         overflow: hidden;
@@ -72,7 +71,8 @@
         transform: translateX(100%);
       }
       h1{
-        color:#183B56;
+        display: none;
+        color:#ff0000;
         font-size: f.rem(24);
       }
       img {
@@ -242,13 +242,13 @@
   }
   
   h1 {
-    font-size: f.rem(30);
+    font-size: f.rem(24);
   }
   h2 {
-    font-size: f.rem(22);
+    font-size: f.rem(32);
   }
   h3 {
-    font-size: f.rem(19);
+    font-size: f.rem(24);
   }
   h4 {
     font-size: f.rem(14);
@@ -258,7 +258,7 @@
   }
   
   .p1 {
-    font-size: f.rem(10);
+    font-size: f.rem(16);
     color: #5A7184;
   }
   .p2 {
@@ -266,7 +266,7 @@
     color: #5A7184;
   }
   .p3 {
-    font-size: f.rem(6);
+    font-size: f.rem(12);
     color: #5A7184;
   }
   .p4 {

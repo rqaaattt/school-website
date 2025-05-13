@@ -39,38 +39,6 @@ section {
   transition: linear 2s;
 }
 
-.target_of_school {
-  position: relative;
-  bottom: 7.8125rem;
-}
-.target_of_school .part1 {
-  position: relative;
-}
-.target_of_school .part1 span {
-  font-size: 9.375rem;
-}
-.target_of_school .part1 #logo_text {
-  position: absolute;
-  bottom: 45%;
-  right: 8%;
-  overflow-x: hidden;
-}
-.target_of_school .part1 .gradient-text {
-  background: linear-gradient(to right, #ffffff, #ffffff, #0086EF);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-.target_of_school .text_box {
-  position: absolute;
-  bottom: -3.125rem;
-  margin-left: 60vw;
-}
-.target_of_school .text_box p {
-  margin-left: 3.125rem;
-}
-
 .history_of_school {
   width: 75vw;
   margin: 0 auto;
@@ -200,7 +168,7 @@ section {
 }
 
 .call_us {
-  margin-top: 6.25rem;
+  margin-top: 3.125rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -214,10 +182,8 @@ section {
   color: #fff;
   text-align: center;
 }
-.call_us h2 {
-  line-height: 3rem;
-}
 .call_us p {
+  width: 70%;
   margin-top: 0.625rem;
 }
 .call_us button {
@@ -246,9 +212,9 @@ section {
 
 .quote {
   margin: auto;
-  margin-top: 12.5rem;
-  width: 75rem;
-  height: 25rem;
+  margin-top: 6.25rem;
+  width: 100%;
+  height: 12.5rem;
   background-color: #F9FBFE;
   border-radius: 1.25rem;
   position: relative;
@@ -256,24 +222,27 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: url("/images/quote/Group 1171275066.svg") no-repeat center;
+  background: url("/images/quote/Group 1171275066.svg") no-repeat;
   background-size: cover;
 }
 .quote h4, .quote p {
   width: auto;
 }
 .quote img {
+  width: 30%;
   position: absolute;
   right: 5%;
-  bottom: 30%;
+  bottom: 40%;
 }
 .quote h4 {
-  margin-left: 6.25rem;
+  width: 13.4375rem;
+  margin-left: 3.125rem;
   color: #183B56;
 }
 .quote p {
+  width: 25rem;
   margin-top: 0.625rem;
-  margin-left: 9.375rem;
+  margin-left: 3.125rem;
 }
 
 .administration {
